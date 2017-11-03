@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.skilldistillery.cart.data.Cart;
+import com.skilldistillery.data.President;
 import com.skilldistillery.data.PresidentDAO;
 import com.skilldistillery.data.USPresidentDAOImpl;
 
@@ -35,6 +37,11 @@ public class USPresidentServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		President pres = (President) session.getAttribute("pres");
+		if (pres == null) {
+			pres = new President();
+			session.setAttribute("pres", pres);
+		}
 	}
 
 	/**
