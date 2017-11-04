@@ -33,7 +33,10 @@ public class USPresidentServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
+		
+		
+		
+		
 		ServletContext context = getServletContext();
 		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");
 		President p = new President("bill", "jep", "thomas", "none", 0, "none", "https://upload.wikimedia.org/wikipedia/commons/d/df/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg");
