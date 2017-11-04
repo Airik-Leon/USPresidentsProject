@@ -69,6 +69,10 @@
 
 				<form action="addPresident.do" method="POST">
 					<c:forEach var="pres" items="${presList}">
+					${pres.termNumber}
+					${pres.fact}
+					${pres.firstName}
+					${pres.termNumber}
 					<p>hi there my name is <img src="${pres.url}"/></p>
 					
 					</c:forEach>

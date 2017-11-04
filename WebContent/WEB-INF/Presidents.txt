@@ -7,7 +7,7 @@
 7&Andrew& &Jackson&March 4, 1829&March 4, 1837&Democrat&https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Andrew_Jackson_Daguerrotype-crop.jpg/1280px-Andrew_Jackson_Daguerrotype-crop.jpg&Loved dueling
 8&Martin& &Van Buren&March 4, 1837&March 4, 1841&Democrat&https://upload.wikimedia.org/wikipedia/commons/9/94/Martin_Van_Buren_edit.jpg&Best hair award
 9&William&Henry&Harrison&March 4, 1841&April 4, 1841&Whig&https://upload.wikimedia.org/wikipedia/commons/c/c5/William_Henry_Harrison_daguerreotype_edit.jpg&Ran a campaign on Log Cabins and Apple Cider
-10&John& &Tyler&April 4, 1841&March 4, 1845&0&Whig&https://upload.wikimedia.org/wikipedia/commons/2/2f/Tyler_Daguerreotype_crop_%28restoration%29.jpg&Fun Fact
+10&John& &Tyler&April 4, 1841&March 4, 1845&Whig&https://upload.wikimedia.org/wikipedia/commons/2/2f/Tyler_Daguerreotype_crop_%28restoration%29.jpg&Fun Fact
 11&James&Knox&Polk&March 4, 1845&March 4, 1849&Democrat&https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/JKP.tif/lossy-page1-1024px-JKP.tif.jpg&Fun Fact
 12&Zachary& &Taylor&March 4, 1849&July 9, 1850&Whig&https://upload.wikimedia.org/wikipedia/commons/a/a6/Zachary_Taylor_restored_and_cropped.png&Fun Fact
 13&Millard& &Fillmore&July 9, 1850&March 4, 1853&Whig&https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Millard_Fillmore_by_Brady_Studio_1855-65-crop.jpg/1024px-Millard_Fillmore_by_Brady_Studio_1855-65-crop.jpg&Fun Fact
