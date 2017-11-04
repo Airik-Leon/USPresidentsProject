@@ -36,10 +36,10 @@
               <a class="nav-link" href="#">George Washington</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">asdf</a>
+              <a class="nav-link" href="#">John Adams</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">asdf</a>
+              <a class="nav-link" href="#">Thomas Jefferson</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">asdf</a>
