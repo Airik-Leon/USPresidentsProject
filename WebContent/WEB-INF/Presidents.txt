@@ -1,4 +1,3 @@
-#&FirstMiddle&Last&Term Started& Term Ended &Party&&Fun Fact
 1&George& &Washington&July 1, 1789&March 4, 1797&Independent&https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/986px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg&Made booze
 2&John& &Adams&March 4, 1797&March 4, 1801&Federalist&https://upload.wikimedia.org/wikipedia/commons/d/df/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg&Died on July 4th
 3&Thomas& &Jefferson&March 4, 1801&March 4, 1809&Democratic-Republican&https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/1280px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg&Had a nice house
