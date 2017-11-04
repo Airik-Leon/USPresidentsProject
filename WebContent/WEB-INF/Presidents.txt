@@ -1,46 +1,46 @@
-#|First|Middle|Last|Inagurated|Party|FunFact
-1|George||Washington|July 1, 1789|March 4, 1797|Independent|Had wooden teeth
-2|John||Adams|March 4, 1797|March 4, 1801|Federalist|Had no arms
-3|Thomas||Jefferson|March 4, 1801|March 4, 1809|Democratic-Republican|
-4|James||Madison|March 4, 1809|March 4, 1817|Democratic-Republican|
-5|James||Monroe|March 4, 1817|March 4, 1825|Democratic-Republican|
-6|John|Quincy|Adams|March 4, 1825|March 4, 1829|Democratic-Republican|
-7|Andrew||Jackson|March 4, 1829|March 4, 1837|Democrat|
-8|Martin||Van Buren|March 4, 1837|March 4, 1841|Democrat|
-9|William|Henry|Harrison|March 4, 1841|April 4, 1841|Whig|
-10|John||Tyler|April 4, 1841|March 4, 1845|0|Whig|
-11|James|Knox|Polk|March 4, 1845|March 4, 1849|Democrat|
-12|Zachary||Taylor|March 4, 1849|July 9, 1850|Whig|
-13|Millard||Fillmore|July 9, 1850|March 4, 1853|Whig|
-14|Franklin||Pierce|March 4, 1853|March 4, 1857|Democrat|
-15|James||Buchanan|March 4, 1857|March 4, 1861|Democrat|
-16|Abraham||Lincoln|March 4, 1861|April 15, 1865|Republican|
-17|Andrew||Johnson|April 15, 1865|March 4, 1869|Democrat|
-18|Ulysses|Simpson|Grant|March 4, 1869|March 4, 1877|Republican|
-19|Rutherford|Birchard|Hayes|March 4, 1877|March 4, 1881|Republican|
-20|James|Abram|Garfield|March 4, 1881|September 19, 1881|Republican|
-21|Chester|Alan|Arthur|September 19, 1881|March 4, 1885|Republican|
-22|Grover||Cleveland|March 4, 1885|March 4, 1889|Democrat|
-23|Benjamin||Harrison|March 4, 1889|March 4, 1893|Republican|
-24|Grover||Cleveland|March 4, 1893|March 4, 1897|Democrat|
-25|William||McKinley|March 4, 1897|September 14, 1901|Republican|
-26|Theodore||Roosevelt|September 14, 1901|March 4, 1909|Republican|
-27|William|Henry|Taft|March 4, 1909|March 4, 1913|Republican|
-28|Woodrow||Wilson|March 4, 1913|March 4, 1921|Democrat|
-29|Warren|Gamaliel|Harding|March 4, 1921|August 2, 1923|Republican|
-30|Calvin||Coolidge|August 2, 1923|March 4, 1929|Republican|
-31|Herbert|Clark|Hoover|March 4, 1929|March 4, 1933|Republican|
-32|Franklin|Delano|Roosevelt|March 4, 1933|April 12, 1945|Democrat|
-33|Harry|S|Truman|April 12, 1945|January 20, 1953|Democrat|
-34|Dwight|David|Eisenhower|January 20, 1953|January 20, 1961|Republican|
-35|John|Fitzgerald|Kennedy|January 20, 1961|November 22, 1963|Democrat|
-36|Lyndon|Baines|Johnson|November 22, 1963|January 20, 1969|Democrat|
-37|Richard|Milhous|Nixon|January 20, 1969|August 9, 1974|Republican|
-38|Gerald|Rudolph|Ford|August 9, 1974|January 20, 1977|Republican|
-39|James|Earl|Carter|January 20, 1977|January 20, 1981|Democrat|
-40|Ronald|Wilson|Reagan|January 20, 1981|January 20, 1989|Republican|
-41|George|Herbert Walker|Bush|January 20, 1989|January 20, 1993|Republican|
-42|William|Jefferson|Clinton|January 20, 1993|January 20, 2001|Democrat|
-43|George|Walker|Bush|January 20, 2001|January 20, 2009|Republican|
-44|Barack|Hussein|Obama|January 20, 2009|January 20, 2017|Democrat|
-45|Donald|John|Trump|January 20, 2017|Republican|
+#&FirstMiddle&Last&Term Started& Term Ended &Party&FunFact
+1&George& &Washington&July 1, 1789&March 4, 1797&Independent&Had wooden teeth
+2&John& &Adams&March 4, 1797&March 4, 1801&Federalist&Had no arms
+3&Thomas& &Jefferson&March 4, 1801&March 4, 1809&Democratic-Republican&d
+4&James& &Madison&March 4, 1809&March 4, 1817&Democratic-Republican&d
+5&James& &Monroe&March 4, 1817&March 4, 1825&Democratic-Republican&d
+6&John&Quincy&Adams&March 4, 1825&March 4, 1829&Democratic-Republican&d
+7&Andrew& &Jackson&March 4, 1829&March 4, 1837&Democrat&d
+8&Martin& &Van Buren&March 4, 1837&March 4, 1841&Democrat&d
+9&William&Henry&Harrison&March 4, 1841&April 4, 1841&Whig&d
+10&John& &Tyler&April 4, 1841&March 4, 1845&0&Whig&d
+11&James&Knox&Polk&March 4, 1845&March 4, 1849&Democrat&d
+12&Zachary& &Taylor&March 4, 1849&July 9, 1850&Whig&d
+13&Millard& &Fillmore&July 9, 1850&March 4, 1853&Whig&d
+14&Franklin& &Pierce&March 4, 1853&March 4, 1857&Democrat&d
+15&James& &Buchanan&March 4, 1857&March 4, 1861&Democrat&d
+16&Abraham& &Lincoln&March 4, 1861&April 15, 1865&Republican&d
+17&Andrew& &Johnson&April 15, 1865&March 4, 1869&Democrat&d
+18&Ulysses&Simpson&Grant&March 4, 1869&March 4, 1877&Republican&d
+19&Rutherford&Birchard&Hayes&March 4, 1877&March 4, 1881&Republican&d
+20&James&Abram&Garfield&March 4, 1881&September 19, 1881&Republican&d
+21&Chester&Alan&Arthur&September 19, 1881&March 4, 1885&Republican&d
+22&Grover& &Cleveland&March 4, 1885&March 4, 1889&Democrat&d
+23&Benjamin& &Harrison&March 4, 1889&March 4, 1893&Republican&d
+24&Grover& &Cleveland&March 4, 1893&March 4, 1897&Democrat&d
+25&William& &McKinley&March 4, 1897&September 14, 1901&Republican&d
+26&Theodore& &Roosevelt&September 14, 1901&March 4, 1909&Republican&d
+27&William&Henry&Taft&March 4, 1909&March 4, 1913&Republican&d
+28&Woodrow& &Wilson&March 4, 1913&March 4, 1921&Democrat&d
+29&Warren&Gamaliel&Harding&March 4, 1921&August 2, 1923&Republican&d
+30&Calvin& &Coolidge&August 2, 1923&March 4, 1929&Republican&d
+31&Herbert&Clark&Hoover&March 4, 1929&March 4, 1933&Republican&d
+32&Franklin&Delano&Roosevelt&March 4, 1933&April 12, 1945&Democrat&d
+33&Harry&S&Truman&April 12, 1945&January 20, 1953&Democrat&d
+34&Dwight&David&Eisenhower&January 20, 1953&January 20, 1961&Republican&d
+35&John&Fitzgerald&Kennedy&January 20, 1961&November 22, 1963&Democrat&d
+36&Lyndon&Baines&Johnson&November 22, 1963&January 20, 1969&Democrat&d
+37&Richard&Milhous&Nixon&January 20, 1969&August 9, 1974&Republican&d
+38&Gerald&Rudolph&Ford&August 9, 1974&January 20, 1977&Republican&d
+39&James&Earl&Carter&January 20, 1977&January 20, 1981&Democrat&d
+40&Ronald&Wilson&Reagan&January 20, 1981&January 20, 1989&Republican&d
+41&George&Herbert Walker&Bush&January 20, 1989&January 20, 1993&Republican&d
+42&William&Jefferson&Clinton&January 20, 1993&January 20, 2001&Democrat&d
+43&George&Walker&Bush&January 20, 2001&January 20, 2009&Republican&d
+44&Barack&Hussein&Obama&January 20, 2009&January 20, 2017&Democrat&d
+45&Donald&John&Trump&January 20, 2017&Republican&d
