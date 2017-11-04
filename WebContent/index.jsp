@@ -26,6 +26,7 @@
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
 	</nav>
+<<<<<<< HEAD
 
 	<div class="container-fluid">
 		<div class="row">
@@ -119,6 +120,49 @@
 			<li class="page-item"><a class="page-link" href="#">Next</a></li>
 		</ul>
 	</nav>
+=======
+	
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">List of Presidents<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">George Washington</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">John Adams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thomas Jefferson</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">asdf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">asdf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">asdf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">asdf</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nav item again, in Nav-pill flex column</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">One more nav</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Another nav item</a>
+            </li>
+          </ul>
+        </nav>
+>>>>>>> 191ac80291ad586de622538ea4fdc9934b838ee2
 
 	<form action="getPresident.do" method="post"></form>
 
