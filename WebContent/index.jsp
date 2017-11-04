@@ -26,7 +26,7 @@
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
 	</nav>
-<<<<<<< HEAD
+	<<<<<<< HEAD
 
 	<div class="container-fluid">
 		<div class="row">
@@ -66,25 +66,32 @@
 
 				Second column
 
-				<div id="carouselExampleIndicators" class="carousel slide"
-					data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleIndicators" data-slide-to="0"
-							class="active"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img class="d-block w-100" src="..." alt="First slide">
+
+				<form action="addPresident.do" method="POST">
+
+					<%-- <c:forEach var="pres" items="${presList}"> --%>
+						<%-- option value="${prod.upc}" ${selectedItem}>${prod.name}</option> --%>
+
+						<div id="carouselExampleIndicators" class="carousel slide"
+							data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators"
+									data-slide-to="${ pres.termNumber }"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="GW.jpg" alt="First slide">
+									
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="..." alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="..." alt="Third slide">
+								</div>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img class="d-block w-100" src="..." alt="Second slide">
-						</div>
-						<div class="carousel-item">
-							<img class="d-block w-100" src="..." alt="Third slide">
-						</div>
-					</div>
+					<%-- </c:forEach> --%>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators"
 						role="button" data-slide="prev"> <span
 						class="carousel-control-prev-icon" aria-hidden="true"></span> <span
@@ -94,12 +101,12 @@
 						class="carousel-control-next-icon" aria-hidden="true"></span> <span
 						class="sr-only">Next</span>
 					</a>
-				</div>
-
+				</form>
 			</div>
-
 		</div>
+
 	</div>
+
 
 
 
@@ -120,52 +127,36 @@
 			<li class="page-item"><a class="page-link" href="#">Next</a></li>
 		</ul>
 	</nav>
-=======
-	
-<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">List of Presidents<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">George Washington</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">John Adams</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Thomas Jefferson</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">asdf</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">asdf</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">asdf</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">asdf</a>
-            </li>
-          </ul>
+	=======
 
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nav item again, in Nav-pill flex column</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">One more nav</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Another nav item</a>
-            </li>
-          </ul>
-        </nav>
->>>>>>> 191ac80291ad586de622538ea4fdc9934b838ee2
+	<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+		<ul class="nav nav-pills flex-column">
+			<li class="nav-item"><a class="nav-link active" href="#">List
+					of Presidents<span class="sr-only">(current)</span>
+			</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">George
+					Washington</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">John Adams</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Thomas
+					Jefferson</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
+		</ul>
+
+		<ul class="nav nav-pills flex-column">
+			<li class="nav-item"><a class="nav-link" href="#">Nav item
+					again, in Nav-pill flex column</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">One more
+					nav</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Another
+					nav item</a></li>
+		</ul>
+	</nav>
+	>>>>>>> 191ac80291ad586de622538ea4fdc9934b838ee2
 
 	<form action="getPresident.do" method="post"></form>
-
 </body>
 
 

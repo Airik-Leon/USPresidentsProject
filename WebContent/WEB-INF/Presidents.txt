@@ -1,4 +1,4 @@
-#&FirstMiddle&Last&Term Started& Term Ended &Party&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Seal_of_the_President_of_the_United_States.svg&Fun Fact
+#&FirstMiddle&Last&Term Started& Term Ended &Party&&Fun Fact
 1&George& &Washington&July 1, 1789&March 4, 1797&Independent&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg&Made booze
 2&John& &Adams&March 4, 1797&March 4, 1801&Federalist&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Official_Presidential_portrait_of_John_Adams_(by_John_Trumbull,_circa_1792).jpg&Died on July 4th
 3&Thomas& &Jefferson&March 4, 1801&March 4, 1809&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg&Had a nice house

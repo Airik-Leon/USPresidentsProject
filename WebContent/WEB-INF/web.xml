@@ -3,6 +3,7 @@
   <display-name>USPresidentsWeb</display-name>
   <welcome-file-list>
     <welcome-file>home.do</welcome-file>
+    
   </welcome-file-list>
   
   <servlet>

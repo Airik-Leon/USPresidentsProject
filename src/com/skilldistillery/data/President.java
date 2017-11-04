@@ -11,11 +11,12 @@ public class President {
 	private LocalDate termEnded; 
 	private String party;
 	private String fact;
+	private String URL;
 
 	public President() {
 	}
 
-	public President(String firstName, String middleName, String lastName, String party, int termNumber, String fact, LocalDate termStarted, LocalDate termEnded) {
+	public President(String firstName, String middleName, String lastName, String party, int termNumber, String fact, LocalDate termStarted, LocalDate termEnded, String URL) {
 		super();
 		this.firstName = firstName;
 		this.middleName = middleName; 
@@ -25,6 +26,11 @@ public class President {
 		this.fact = fact;
 		this.termStarted = termStarted;
 		this.termEnded = termEnded; 
+		this.URL = URL;
+	}
+
+	public String getURL() {
+		return URL;
 	}
 
 	public String getParty() {
