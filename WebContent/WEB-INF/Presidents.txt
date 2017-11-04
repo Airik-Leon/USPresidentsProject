@@ -1,15 +1,15 @@
 1&George& &Washington&July 1, 1789&March 4, 1797&Independent&https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/986px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg&Made booze
 2&John& &Adams&March 4, 1797&March 4, 1801&Federalist&https://upload.wikimedia.org/wikipedia/commons/d/df/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg&Died on July 4th
 3&Thomas& &Jefferson&March 4, 1801&March 4, 1809&Democratic-Republican&https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/1280px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg&Had a nice house
-4&James& &Madison&March 4, 1809&March 4, 1817&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Madison.jpg&Princeton's first graduate
-5&James& &Monroe&March 4, 1817&March 4, 1825&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Monroe_White_House_portrait_1819.gif&Monrovia, Liberia is named for him
-6&John&Quincy&Adams&March 4, 1825&March 4, 1829&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:JQA_Photo.tif&Swam naked
-7&Andrew& &Jackson&March 4, 1829&March 4, 1837&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Andrew_Jackson_Daguerrotype-crop.jpg&Loved dueling
-8&Martin& &Van Buren&March 4, 1837&March 4, 1841&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Martin_Van_Buren_edit.jpg&Best hair award
-9&William&Henry&Harrison&March 4, 1841&April 4, 1841&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:William_Henry_Harrison_daguerreotype_edit.jpg&Ran a campaign on Log Cabins and Apple Cider
-10&John& &Tyler&April 4, 1841&March 4, 1845&0&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Tyler_Daguerreotype_crop_(restoration).jpg&Fun Fact
-11&James&Knox&Polk&March 4, 1845&March 4, 1849&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:JKP.tif&Fun Fact
-12&Zachary& &Taylor&March 4, 1849&July 9, 1850&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Zachary_Taylor_restored_and_cropped.png&Fun Fact
+4&James& &Madison&March 4, 1809&March 4, 1817&Democratic-Republican&https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Madison.jpg/1280px-James_Madison.jpg&Princeton's first graduate
+5&James& &Monroe&March 4, 1817&March 4, 1825&Democratic-Republican&https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/James_Monroe_White_House_portrait_1819.gif/1280px-James_Monroe_White_House_portrait_1819.gif&Monrovia, Liberia is named for him
+6&John&Quincy&Adams&March 4, 1825&March 4, 1829&Democratic-Republican&https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/JQA_Photo.tif/lossless-page1-1280px-JQA_Photo.tif.png&Swam naked
+7&Andrew& &Jackson&March 4, 1829&March 4, 1837&Democrat&https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Andrew_Jackson_Daguerrotype-crop.jpg/1280px-Andrew_Jackson_Daguerrotype-crop.jpg&Loved dueling
+8&Martin& &Van Buren&March 4, 1837&March 4, 1841&Democrat&https://upload.wikimedia.org/wikipedia/commons/9/94/Martin_Van_Buren_edit.jpg&Best hair award
+9&William&Henry&Harrison&March 4, 1841&April 4, 1841&Whig&https://upload.wikimedia.org/wikipedia/commons/c/c5/William_Henry_Harrison_daguerreotype_edit.jpg&Ran a campaign on Log Cabins and Apple Cider
+10&John& &Tyler&April 4, 1841&March 4, 1845&0&Whig&https://upload.wikimedia.org/wikipedia/commons/2/2f/Tyler_Daguerreotype_crop_%28restoration%29.jpg&Fun Fact
+11&James&Knox&Polk&March 4, 1845&March 4, 1849&Democrat&https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/JKP.tif/lossy-page1-1024px-JKP.tif.jpg&Fun Fact
+12&Zachary& &Taylor&March 4, 1849&July 9, 1850&Whig&https://upload.wikimedia.org/wikipedia/commons/a/a6/Zachary_Taylor_restored_and_cropped.png&Fun Fact
 13&Millard& &Fillmore&July 9, 1850&March 4, 1853&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Millard_Fillmore_by_Brady_Studio_1855-65-crop.jpg&Fun Fact
 14&Franklin& &Pierce&March 4, 1853&March 4, 1857&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Franklin_Pierce_-_1.jpg&Fun Fact
 15&James& &Buchanan&March 4, 1857&March 4, 1861&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Buchanan.jpg&Fun Fact
