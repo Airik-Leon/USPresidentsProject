@@ -19,14 +19,14 @@
 <body>
 
 	<nav class="navbar navbar-dark bg-dark justify-content-between">
-		<a class="navbar-brand"><h1>Hello World</h1></a>
+		<a class="navbar-brand"><h1>U.S. PRESIDENTS</h1></a>
 		<form class="form-inline">
 			<input class="form-control mr-sm-2" type="search"
 				placeholder="Search" aria-label="Search">
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
 	</nav>
-	<<<<<<< HEAD
+	<!-- <<<<<<< HEAD
 
 	<div class="container-fluid">
 		<div class="row">
@@ -59,7 +59,7 @@
 					</ul>
 				</nav>
 
-			</div>
+			</div> -->
 
 
 			<div class="col-sm-8">
@@ -103,7 +103,7 @@
 	</nav>
 	=======
 
-	<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+	<!-- <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
 		<ul class="nav nav-pills flex-column">
 			<li class="nav-item"><a class="nav-link active" href="#">List
 					of Presidents<span class="sr-only">(current)</span>
@@ -117,9 +117,9 @@
 			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
-		</ul>
+		</ul> -->
 
-		<ul class="nav nav-pills flex-column">
+		<!-- <ul class="nav nav-pills flex-column">
 			<li class="nav-item"><a class="nav-link" href="#">Nav item
 					again, in Nav-pill flex column</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">One more
@@ -127,8 +127,7 @@
 			<li class="nav-item"><a class="nav-link" href="#">Another
 					nav item</a></li>
 		</ul>
-	</nav>
-	>>>>>>> 191ac80291ad586de622538ea4fdc9934b838ee2
+	</nav> -->
 
 	<form action="getPresident.do" method="post"></form>
 </body>
