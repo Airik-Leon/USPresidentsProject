@@ -16,7 +16,7 @@ public class USPresidentDAOImpl implements PresidentDAO {
 		loadPresidents(); 
 	}
 	public void loadPresidents() {
-		File filename = new File("WebContent/WEB-INF/Presidents.txt"); 
+		File filename = new File("~/USPresidentsWeb/WebContent/WEB-INF/Presidents.txt"); 
 		FileReader fr; 
 		BufferedReader br; 
 		try {

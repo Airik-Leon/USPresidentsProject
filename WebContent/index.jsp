@@ -68,12 +68,9 @@
 
 
 				<form action="addPresident.do" method="POST">
-				<input type="submit" name="submit"/>
-				hi
 					<c:forEach var="pres" items="${presList}">
 					<p>hi there my name is <img src="${pres.url}"/></p>
 					
-					<img>
 					</c:forEach>
 				</form>
 			</div>

@@ -37,17 +37,12 @@ public class USPresidentServlet extends HttpServlet {
 		
 		
 		
-		ServletContext context = getServletContext();
-		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");
-		President p = new President("bill", "jep", "thomas", "none", 0, "none", "https://upload.wikimedia.org/wikipedia/commons/d/df/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg");
 		
+		ServletContext context = getServletContext();
+		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");		
 		HttpSession session = req.getSession();
-		if (session.getAttribute("presList") == null) {
-			presList = dao.getListPresidents();
-			session.setAttribute("presList", presList);
-		}
 		presList = dao.getListPresidents();
-		presList.add(p);
+		System.out.println(presList);
 		session.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
 	}
