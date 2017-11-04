@@ -4,28 +4,39 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiPredicate;
+
+import javax.servlet.ServletContext;
 public class USPresidentDAOImpl implements PresidentDAO {
+	private static final String filename = "WEB-INF/Presidents.txt";
+	private ServletContext servletContext;
+
 	private List<President> presList;
-	public USPresidentDAOImpl() {
+	public USPresidentDAOImpl(ServletContext context) {
+		servletContext = context;
 		presList = new ArrayList<>(); 
 		loadPresidents(); 
 	}
 	public void loadPresidents() {
-		File filename = new File("~/USPresidentsWeb/WebContent/WEB-INF/Presidents.txt"); 
-		FileReader fr; 
-		BufferedReader br; 
-		try {
-			fr = new FileReader(filename); 
-			br = new BufferedReader(fr);
-			String line = br.readLine();
+//		File filename = new File("~/USPresidentsWeb/WebContent/WEB-INF/Presidents.txt"); 
+//		FileReader fr; 
+//		BufferedReader br; 
+		InputStream is = servletContext.getResourceAsStream(filename);
+
+		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
+			String line;
+//			fr = new FileReader(filename); 
+//			br = new BufferedReader(fr);
+//			String line = br.readLine();
 			President currentPresident; 
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy"); 
-			while((line = br.readLine()) != null) {
+			while((line = buf.readLine()) != null) {
 				String[] lineAsArray = line.split("&"); 
 				currentPresident = new President(); 
 				try {

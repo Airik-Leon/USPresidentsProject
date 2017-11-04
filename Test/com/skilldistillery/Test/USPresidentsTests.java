@@ -18,7 +18,7 @@ public class USPresidentsTests {
 	PresidentDAO dao; 
 	@Before
 	public void setUp() throws Exception {
-		dao = new USPresidentDAOImpl();
+//		dao = new USPresidentDAOImpl(getServletContext());
 	}
 
 	@After

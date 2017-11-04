@@ -25,7 +25,7 @@ public class USPresidentServlet extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		ServletContext context = getServletContext();
-		dao = new USPresidentDAOImpl();
+		dao = new USPresidentDAOImpl(context);
 		context.setAttribute("dao", dao);
 	}
 
