@@ -45,7 +45,6 @@ public class USPresidentDAOImpl implements PresidentDAO {
 					else {
 						//need to set all facts for errors to stop occurring 
 						currentPresident.setFact(lineAsArray[7]); 
-						
 					}
 				}
 				catch(NumberFormatException nfe) {
@@ -63,18 +62,25 @@ public class USPresidentDAOImpl implements PresidentDAO {
 	}
 	@Override
 	public President getPresident(int termNumber) {
+		President newPresident; 
+		for (President president : presList) {
+			if(president.getTermNumber() == termNumber) {
+				newPresident = president; 
+				return newPresident; 
+			}
+		}
 		return null;
 	}
 
 	@Override
 	public List<President> getPresidentsByParty(String party) {
-		BiPredicate<President, String> partyFilter= (x,s)->x.getParty().equals(s); 
-		return this.filter(partyFilter, party); 
+		BiPredicate<President, String> filterRules= (x,s)->x.getParty().equals(s); 
+		return this.filter(filterRules, party); 
 	}
 
 	@Override
 	public List<President> getListPresidents() {
-		return presList;
+		return new ArrayList<>(presList);
 	}
 
 	@Override
@@ -83,7 +89,6 @@ public class USPresidentDAOImpl implements PresidentDAO {
 		for (President p : presList) {
 			if (matcher.test(p, party)) {
 				filtered.add(p);
-				System.out.println(p);
 			}
 		}
 		return filtered;

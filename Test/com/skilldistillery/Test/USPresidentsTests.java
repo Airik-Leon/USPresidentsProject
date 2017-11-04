@@ -37,4 +37,9 @@ public class USPresidentsTests {
 			assertTrue(president.getParty().equals("Federalist")); 
 		}
 	}
+	@Test
+	public void testGetPresidentByNumber() {
+		President x = dao.getPresident(39);
+		assertTrue(x.getFirstName().equals("James"));
+	}
 }
