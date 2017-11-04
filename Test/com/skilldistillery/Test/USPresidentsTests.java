@@ -39,7 +39,8 @@ public class USPresidentsTests {
 	}
 	@Test
 	public void testGetPresidentByNumber() {
-		President x = dao.getPresident(39);
+		President x = dao.getPresident(45);
+		System.out.println(x);
 		assertTrue(x.getFirstName().equals("James"));
 	}
 }

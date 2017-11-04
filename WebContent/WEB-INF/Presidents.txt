@@ -43,4 +43,4 @@
 42&William&Jefferson&Clinton&January 20, 1993&January 20, 2001&Democrat&d
 43&George&Walker&Bush&January 20, 2001&January 20, 2009&Republican&d
 44&Barack&Hussein&Obama&January 20, 2009&January 20, 2017&Democrat&d
-45&Donald&John&Trump&January 20, 2017&Republican&d
+45&Donald&John&Trump&January 20, 2017& &Republican&d

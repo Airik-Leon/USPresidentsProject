@@ -33,19 +33,13 @@ public class USPresidentDAOImpl implements PresidentDAO {
 					currentPresident.setFirstName(lineAsArray[1]);
 					currentPresident.setMiddleName(lineAsArray[2]);
 					currentPresident.setLastName(lineAsArray[3]);
-					//still need to check for incomplete years
 					currentPresident.setTermStarted(LocalDate.parse(lineAsArray[4].trim(), formatter));
 					if(currentPresident.getTermNumber() != 45) {
 						currentPresident.setTermEnded(LocalDate.parse(lineAsArray[5].trim(), formatter));
 					}
 					currentPresident.setParty(lineAsArray[6]);
-					if(currentPresident.getTermNumber()== 45) {
-						currentPresident.setFact(lineAsArray[6]);
-					}
-					else {
-						//need to set all facts for errors to stop occurring 
-						currentPresident.setFact(lineAsArray[7]); 
-					}
+					//need to set all facts for errors to stop occurring 
+					currentPresident.setFact(lineAsArray[7]); 
 				}
 				catch(NumberFormatException nfe) {
 					nfe.printStackTrace();
