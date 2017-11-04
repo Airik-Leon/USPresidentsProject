@@ -28,8 +28,20 @@ public class President {
 		this.termEnded = termEnded; 
 		this.URL = URL;
 	}
+	public President(String firstName, String middleName, String lastName, String party, int termNumber, String fact, String URL) {
+		super();
+		this.firstName = firstName;
+		this.middleName = middleName; 
+		this.lastName = lastName; 
+		this.party = party;
+		this.termNumber = termNumber;
+		this.fact = fact;
 
-	public String getURL() {
+		this.URL = URL;
+	}
+
+
+	public String getUrl() {
 		return URL;
 	}
 
@@ -93,6 +105,11 @@ public class President {
 	}
 	public void setTermStarted(LocalDate termStarted) {
 		this.termStarted = termStarted;
+	}
+	
+
+	public void setUrl(String uRL) {
+		URL = uRL;
 	}
 
 	@Override

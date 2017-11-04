@@ -68,39 +68,13 @@
 
 
 				<form action="addPresident.do" method="POST">
-
-					<%-- <c:forEach var="pres" items="${presList}"> --%>
-						<%-- option value="${prod.upc}" ${selectedItem}>${prod.name}</option> --%>
-
-						<div id="carouselExampleIndicators" class="carousel slide"
-							data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators"
-									data-slide-to="${ pres.termNumber }"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img class="d-block w-100" src="GW.jpg" alt="First slide">
-									
-								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100" src="..." alt="Second slide">
-								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100" src="..." alt="Third slide">
-								</div>
-							</div>
-						</div>
-					<%-- </c:forEach> --%>
-					<a class="carousel-control-prev" href="#carouselExampleIndicators"
-						role="button" data-slide="prev"> <span
-						class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-						class="sr-only">Previous</span>
-					</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
-						role="button" data-slide="next"> <span
-						class="carousel-control-next-icon" aria-hidden="true"></span> <span
-						class="sr-only">Next</span>
-					</a>
+				<input type="submit" name="submit"/>
+				hi
+					<c:forEach var="pres" items="${presList}">
+					<p>hi there my name is <img src="${pres.url}"/></p>
+					
+					<img>
+					</c:forEach>
 				</form>
 			</div>
 		</div>

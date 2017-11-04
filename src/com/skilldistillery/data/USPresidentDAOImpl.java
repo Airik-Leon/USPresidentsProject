@@ -40,6 +40,7 @@ public class USPresidentDAOImpl implements PresidentDAO {
 					currentPresident.setParty(lineAsArray[6]);
 					//need to set all facts for errors to stop occurring 
 					currentPresident.setFact(lineAsArray[7]); 
+					currentPresident.setUrl(lineAsArray[8]);
 				}
 				catch(NumberFormatException nfe) {
 					nfe.printStackTrace();
