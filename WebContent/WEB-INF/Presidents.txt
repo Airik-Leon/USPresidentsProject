@@ -1,13 +1,13 @@
-#&FirstMiddle&Last&Term Started& Term Ended &Party&URL&Fun Fact
-1&George& &Washington&July 1, 1789&March 4, 1797&Independent&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg&Fun Fact
-2&John& &Adams&March 4, 1797&March 4, 1801&Federalist&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Official_Presidential_portrait_of_John_Adams_(by_John_Trumbull,_circa_1792).jpg&Fun Fact
-3&Thomas& &Jefferson&March 4, 1801&March 4, 1809&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg&Fun Fact
-4&James& &Madison&March 4, 1809&March 4, 1817&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Madison.jpg&Fun Fact
-5&James& &Monroe&March 4, 1817&March 4, 1825&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Monroe_White_House_portrait_1819.gif&Fun Fact
-6&John&Quincy&Adams&March 4, 1825&March 4, 1829&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:JQA_Photo.tif&Fun Fact
-7&Andrew& &Jackson&March 4, 1829&March 4, 1837&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Andrew_Jackson_Daguerrotype-crop.jpg&Fun Fact
-8&Martin& &Van Buren&March 4, 1837&March 4, 1841&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Martin_Van_Buren_edit.jpg&Fun Fact
-9&William&Henry&Harrison&March 4, 1841&April 4, 1841&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:William_Henry_Harrison_daguerreotype_edit.jpg&Fun Fact
+#&FirstMiddle&Last&Term Started& Term Ended &Party&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Seal_of_the_President_of_the_United_States.svg&Fun Fact
+1&George& &Washington&July 1, 1789&March 4, 1797&Independent&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg&Made booze
+2&John& &Adams&March 4, 1797&March 4, 1801&Federalist&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Official_Presidential_portrait_of_John_Adams_(by_John_Trumbull,_circa_1792).jpg&Died on July 4th
+3&Thomas& &Jefferson&March 4, 1801&March 4, 1809&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg&Had a nice house
+4&James& &Madison&March 4, 1809&March 4, 1817&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Madison.jpg&Princeton's first graduate
+5&James& &Monroe&March 4, 1817&March 4, 1825&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:James_Monroe_White_House_portrait_1819.gif&Monrovia, Liberia is named for him
+6&John&Quincy&Adams&March 4, 1825&March 4, 1829&Democratic-Republican&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:JQA_Photo.tif&Swam naked
+7&Andrew& &Jackson&March 4, 1829&March 4, 1837&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Andrew_Jackson_Daguerrotype-crop.jpg&Loved dueling
+8&Martin& &Van Buren&March 4, 1837&March 4, 1841&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Martin_Van_Buren_edit.jpg&Best hair award
+9&William&Henry&Harrison&March 4, 1841&April 4, 1841&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:William_Henry_Harrison_daguerreotype_edit.jpg&Ran a campaign on Log Cabins and Apple Cider
 10&John& &Tyler&April 4, 1841&March 4, 1845&0&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Tyler_Daguerreotype_crop_(restoration).jpg&Fun Fact
 11&James&Knox&Polk&March 4, 1845&March 4, 1849&Democrat&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:JKP.tif&Fun Fact
 12&Zachary& &Taylor&March 4, 1849&July 9, 1850&Whig&https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States#/media/File:Zachary_Taylor_restored_and_cropped.png&Fun Fact
