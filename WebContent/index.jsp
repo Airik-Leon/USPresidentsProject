@@ -27,7 +27,7 @@
 		</form>
 	</nav>
 	
-	<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
               <a class="nav-link active" href="#">List of Presidents<span class="sr-only">(current)</span></a>
@@ -41,9 +41,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">asdf</a>
             </li>
-          </ul>
-
-          <ul class="nav nav-pills flex-column">
             <li class="nav-item">
               <a class="nav-link" href="#">asdf</a>
             </li>
@@ -60,7 +57,7 @@
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Nav item again</a>
+              <a class="nav-link" href="#">Nav item again, in Nav-pill flex column</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">One more nav</a>
