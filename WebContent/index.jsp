@@ -64,31 +64,36 @@
 
 			<div class="col-sm-8">
 
-				Second column
-
 
 				<form action="addPresident.do" method="POST">
+						<div id="carouselExampleIndicators" class="carousel slide"
+							data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators"
+									data-slide-to="45"></li>
+							</ol>
 					<c:forEach var="pres" items="${presList}">
-					${pres.termNumber}
-					${pres.fact}
-					${pres.firstName}
-					${pres.termNumber}
-					<p>hi there my name is <img src="${pres.url}"/></p>
-					
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="${pres.url }" alt="${pres.termNumber}">
+								</div>
+							</div>
 					</c:forEach>
+						</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators"
+						role="button" data-slide="prev"> <span
+						class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+						class="sr-only">Previous</span>
+					</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
+						role="button" data-slide="next"> <span
+						class="carousel-control-next-icon" aria-hidden="true"></span> <span
+						class="sr-only">Next</span>
+					</a>
 				</form>
 			</div>
 		</div>
 
 	</div>
-
-
-
-
-
-
-
-
 
 	<nav aria-label="...">
 		<ul class="pagination justify-content-center">
@@ -103,6 +108,12 @@
 		</ul>
 	</nav>
 	=======
+
+				</form>
+			</div>
+		</div>
+
+	</div>
 
 	<!-- <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
 		<ul class="nav nav-pills flex-column">
