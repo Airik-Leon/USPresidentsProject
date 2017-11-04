@@ -33,18 +33,24 @@ public class USPresidentServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		
-		
-		
-		
-		
+	
 		ServletContext context = getServletContext();
 		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");		
 		HttpSession session = req.getSession();
 		presList = dao.getListPresidents();
-		System.out.println(presList);
 		session.setAttribute("presList", presList);
+		
+		int termInt = 0;
+		String term = req.getParameter("term");
+		if(term != null) {
+		termInt = Integer.parseInt(term);
+		}
+		President pres = dao.getPresident(termInt);
+		session.setAttribute("pres", pres);
+		
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
+		
+		
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
