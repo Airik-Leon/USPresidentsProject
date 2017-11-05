@@ -11,7 +11,9 @@ h1 {
 	display: inline; 
 	text-align: center;
 }
-
+#presidentImg{
+	border-radius:40px;
+}
 
 
 

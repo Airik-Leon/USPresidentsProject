@@ -46,7 +46,6 @@ public class USPresidentServlet extends HttpServlet {
 		
 		if(req.getParameter("forward") != null) {
 			if(count == presList.size()-1) {
-				presList = dao.getListPresidents();
 				count = 0; 
 				pres = presList.get(count);
 			}
@@ -71,7 +70,6 @@ public class USPresidentServlet extends HttpServlet {
 					termInt = Integer.parseInt(searchBar);
 					if(termInt >= 0 &&  termInt <= presList.size()) {
 						termInt--;
-							count = termInt;
 							count=termInt;
 							pres = presList.get(count);				
 					}
