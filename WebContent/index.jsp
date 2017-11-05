@@ -66,13 +66,12 @@
                 <div class="container-fluid" id="buttonComponent">
                     <form class="container" action="backward.do"
                         method="POST">
-                        <input class="btn btn-primary" type="submit"
-                            value="<" name=" back" />
+                        <input class="btn btn-primary" type="submit" value="back" name="back"/>
                     </form>
                     <form class="container" action=forward.do
                         method="POST">
                         <input class="btn btn-primary" type="submit"
-                            value=">" name="forward" />
+                            value="forward" name="forward" />
                     </form>
                 </div>
             </div>
