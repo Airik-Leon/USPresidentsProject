@@ -48,6 +48,7 @@
                 </div>
             </form>
             <br/>
+            <!--PresidentsListComponent  -->
             <div class=" container col-sm">
             <form action="selectPresident.do" method="POST">
                 <select class="list-group" name="ListOfPresidents">
@@ -110,7 +111,6 @@
                 </div>
             </div>
         </div>
-        <!--PresidentsListComponent  -->
         <div class="row">
                 
         </div>

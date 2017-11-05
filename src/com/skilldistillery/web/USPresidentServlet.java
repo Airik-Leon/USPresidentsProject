@@ -81,6 +81,7 @@ public class USPresidentServlet extends HttpServlet {
 			pres = presList.get(count);
 		}
 		else if(req.getParameter("ListOfPresidents") != null) {
+			presList = dao.getListPresidents();
 			termAndParty(req.getParameter("ListOfPresidents"));
 		}
 		else {
