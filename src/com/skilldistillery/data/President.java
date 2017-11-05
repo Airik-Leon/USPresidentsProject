@@ -94,11 +94,16 @@ public class President {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public LocalDate getTermEnded() {
-		return this.termEnded; 
+	public int getTermEnded() {
+		if(this.termEnded == null) {
+			return 0; 
+		}
+		else {
+			return this.termEnded.getYear();
+		}
 	}
-	public LocalDate getTermStarted() {
-		return this.termStarted; 
+	public int getTermStarted() {
+		return this.termStarted.getYear(); 
 	}
 	public void setTermEnded(LocalDate termEnded) {
 		this.termEnded = termEnded;

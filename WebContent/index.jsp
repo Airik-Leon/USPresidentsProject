@@ -25,9 +25,11 @@
         </h1>
     </nav>
     <br />
-    <div class="container">
-        <div class="row" style="float: left;">
-            <form action="party.do" method="POST">
+    <!--Party Component  -->
+    <div class="container" id="presidentApp">
+        <div class="row" style="float: left;" id="partyComponent">
+        <div class="col-sm">
+                    <form action="party.do" method="POST">
                 <div class=" btn-group-vertical col-sm">
                     <div class="btn-group-vertical">
                         <input class="btn btn-primary" type="submit"
@@ -45,9 +47,22 @@
                     </div>
                 </div>
             </form>
-            <div class="col-sm"></div>
+            <br/>
+            <!--PresidentsListComponent  -->
+            <div class=" container col-sm" id="presidentsListComponent">
+            <form action="selectPresident.do" method="POST">
+                <select class="list-group" name="ListOfPresidents">
+                    <c:forEach var="president" items="${presList}">
+                        <option class="list-group-item" value="${president.termNumber}">${president.termNumber}: ${president.firstName} ${president.middleName} ${president.lastName }</option>
+                    </c:forEach>
+                </select>  
+                <br/>
+                <input class="btn btn-primary" type="submit" value="Get President"/>
+            </form>
+            </div>   
         </div>
-        <div class="row col-sm-8">
+        </div>
+        <div class="row col-sm-8" >
             <!--Search -->
             <div class="container col-sm-8" id="presidentComponent">
                 <form action="pres.do" method="POST">
@@ -75,8 +90,16 @@
                         src="${pres.url}" />
                 </div>
                 <!--President term time and facts  -->
-                <div class="container col-sm-12">
-                    <h4>${pres.termStarted} to ${pres.termEnded}</h4>
+                <div class="container col-sm-12" id="presidentTermAndFactsComponent">
+                <c:choose>
+                     <c:when test="${pres.termEnded == 0}">
+                      <c:set var = "yearEnded" value="present"></c:set>
+                     </c:when>
+                     <c:otherwise>
+                        <c:set var="yearEnded" value="${pres.termEnded}"></c:set>
+                     </c:otherwise>
+                </c:choose>
+                     <h4>${pres.termStarted} to ${yearEnded}</h4>
                     <p>${pres.fact}</p>
                 </div>
                 <br>
@@ -85,8 +108,8 @@
                     style="margin: 0px auto; display: block;">
                     <form class="container" action="backward.do"
                         method="POST">
-                        <input class="btn btn-primary" type="submit"
-                            value="<" name=" back" />
+                        <input class="btn btn-primary" type="submit" name="back"
+                            value="<"/>
                     </form>
                     <form class="container" action=forward.do
                         method="POST">
@@ -95,10 +118,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <!--Area for potential side nav  -->
-        <div class="row">
-        
         </div>
     </div>
 </body>

@@ -2,6 +2,7 @@ h1 {
 	color: white;
 }
 #presidentComponent{
+	  padding-top:30px;
 	background-color:#e7e9e9;
 	border-radius:30px;
 	padding:10px;
@@ -11,9 +12,28 @@ h1 {
 	display: inline; 
 	text-align: center;
 }
+#presidentTermAndFactsComponent{
+	border:solid 1px silver;
+	border-radius:5px;
+	margin-top:10px;
+}
 #presidentImg{
 	border-radius:40px;
 }
-
+#partyComponent{
+/* 	 background-color:#7182e9;
+ */  padding:20px;
+  border-radius:20px;
+}
+#presidentApp .row{
+  display:inline-block;
+}
+#presidentsListComponent{
+	border: #e7e9e9 1px solid;
+	padding:20px;
+	border-radius:20px;
+/* 	 box-shadow: 5px 5px 5px silver; 
+ */	
+}
 
 

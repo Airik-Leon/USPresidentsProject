@@ -80,6 +80,10 @@ public class USPresidentServlet extends HttpServlet {
 			presList =  dao.getListPresidents(); 
 			pres = presList.get(count);
 		}
+		else if(req.getParameter("ListOfPresidents") != null) {
+			presList = dao.getListPresidents();
+			termAndParty(req.getParameter("ListOfPresidents"));
+		}
 		else {
 			termAndParty(searchBar);
 		}
@@ -114,6 +118,7 @@ public class USPresidentServlet extends HttpServlet {
 	private void termAndParty(String searchBar) {
 		try {
 			if(searchBar != null) {
+				System.out.println(searchBar);
 				termInt = Integer.parseInt(searchBar);
 				if(termInt >= 0 &&  termInt <= presList.size()) {
 					termInt--;
