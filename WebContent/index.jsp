@@ -22,14 +22,22 @@
             <a class="navbar-brand">U.S. PRESIDENTS</a>
         </h1>
     </nav>
+<br/>
     <div class="container">
         <div class="row">
-            <div class="col-sm">
-                <!--Area for potential side nav  -->
-
+<!--             <div class="col-sm">
+                Area for potential side nav 
+                            <div class=" btn-group-vertical col-sm">
+                <div class="btn-group-vertical">
+                    <input class="btn btn-primary" type="submit"
+                        value="Democrat" name="forward" /> <input
+                        class="btn btn-primary" type="submit"
+                        value="Republican" name="forward" />
+                </div>
             </div>
+            </div> -->
         </div>
-        <div class="container col-sm-8">
+        <div class="row col-sm-8">
             <!--Search -->
             <div class="container col-sm-8" id="presidentComponent">
                 <form action="pres.do" method="POST">
@@ -53,8 +61,8 @@
                 </div>
                 <!-- President Image -->
                 <div class="col-sm-12" id="presidentImg">
-                    <img class="container" width="100%"
-                        height="100%" src="${pres.url}"/>
+                    <img class="container" width="100%" height="100%"
+                        src="${pres.url}" />
                 </div>
                 <!--President term time and facts  -->
                 <div class="container col-sm-12">
@@ -63,10 +71,11 @@
                 </div>
                 <br>
                 <!-- Buttons -->
-                <div class="container-fluid" id="buttonComponent" >
+                <div class="container-fluid" id="buttonComponent">
                     <form class="container" action="backward.do"
                         method="POST">
-                        <input class="btn btn-primary" type="submit" value="back" name="back"/>
+                        <input class="btn btn-primary" type="submit"
+                            value="back" name="back" />
                     </form>
                     <form class="container" action=forward.do
                         method="POST">
@@ -76,9 +85,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <br />
+                <!--Area for potential side nav  -->
+        <div class="row">
 
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
