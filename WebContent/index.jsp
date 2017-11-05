@@ -58,19 +58,21 @@
                 </div>
                 <!--President term time and facts  -->
                 <div class="container col-sm-12">
-                    <h4>${pres.termStarted}to ${pres.termEnded}</h4>
+                    <h4>${pres.termStarted}to${pres.termEnded}</h4>
                     <p>${pres.fact}</p>
                 </div>
                 <br>
                 <!-- Buttons -->
-                <div class="container col-sm-6" id="buttonComponent">
-                    <form action="backward.do" method="POST">
-                        <input class="btn btn-danger" type="submit"
-                            value="backward" name="back" />
-                    </form>
-                    <form action=forward.do method="POST">
+                <div class="container-fluid" id="buttonComponent">
+                    <form class="container" action="backward.do"
+                        method="POST">
                         <input class="btn btn-primary" type="submit"
-                            value="forward" name="forward" />
+                            value="<" name=" back" />
+                    </form>
+                    <form class="container" action=forward.do
+                        method="POST">
+                        <input class="btn btn-primary" type="submit"
+                            value=">" name="forward" />
                     </form>
                 </div>
             </div>
