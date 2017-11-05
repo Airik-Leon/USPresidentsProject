@@ -24,18 +24,17 @@
     </nav>
 <br/>
     <div class="container">
-        <div class="row">
-<!--             <div class="col-sm">
-                Area for potential side nav 
-                            <div class=" btn-group-vertical col-sm">
-                <div class="btn-group-vertical">
-                    <input class="btn btn-primary" type="submit"
-                        value="Democrat" name="forward" /> <input
-                        class="btn btn-primary" type="submit"
-                        value="Republican" name="forward" />
+        <div class="row" style="float:left;">
+            <div class="col-sm">
+                <div class=" btn-group-vertical col-sm">
+                    <div class="btn-group-vertical">
+                        <input class="btn btn-primary" type="submit" value="Democrat" name="dem" />
+                        <input class="btn btn-danger" type="submit" value="Republican" name="repub" />
+                        <input class="btn btn-info" type="submit" value="Democratic-Republican" name="demRepub"/>
+                        <input class="btn btn-secondary" type="submit" value="Whig" name="whig"/>
+                    </div>
                 </div>
             </div>
-            </div> -->
         </div>
         <div class="row col-sm-8">
             <!--Search -->
