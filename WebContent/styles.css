@@ -14,6 +14,12 @@ h1 {
 #presidentImg{
 	border-radius:40px;
 }
+#partyComponent{
+	margin:auto; 
+}
+#presidentApp .row{
+  display:inline-block;
+}
 
 
 

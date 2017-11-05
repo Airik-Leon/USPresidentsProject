@@ -25,9 +25,11 @@
         </h1>
     </nav>
     <br />
-    <div class="container">
-        <div class="row" style="float: left;">
-            <form action="party.do" method="POST">
+    <!--Party Component  -->
+    <div class="container" id="presidentApp">
+        <div class="row" style="float: left;" id="partyComponent">
+        <div class="col-sm">
+                    <form action="party.do" method="POST">
                 <div class=" btn-group-vertical col-sm">
                     <div class="btn-group-vertical">
                         <input class="btn btn-primary" type="submit"
@@ -45,9 +47,21 @@
                     </div>
                 </div>
             </form>
-            <div class="col-sm"></div>
+            <br/>
+            <div class=" container col-sm">
+            <form action="selectPresident.do" method="POST">
+                <select class="list-group" name="ListOfPresidents">
+                    <c:forEach var="president" items="${presList}">
+                        <option class="list-group-item" value="${president.termNumber}">${president.termNumber}: ${president.firstName} ${president.lastName }</option>
+                    </c:forEach>
+                </select>  
+                <br/>
+                <input class="btn btn-primary" type="submit" value="Get President"/>
+            </form>
+            </div>   
         </div>
-        <div class="row col-sm-8">
+        </div>
+        <div class="row col-sm-8" >
             <!--Search -->
             <div class="container col-sm-8" id="presidentComponent">
                 <form action="pres.do" method="POST">
@@ -96,9 +110,9 @@
                 </div>
             </div>
         </div>
-        <!--Area for potential side nav  -->
+        <!--PresidentsListComponent  -->
         <div class="row">
-        
+                
         </div>
     </div>
 </body>
