@@ -25,63 +25,22 @@
 		<input type="submit" value="Search"/>
 		</form>
 	</nav>
-	${pres.firstName}
 
-
+		
 			<div class="col-sm-8">
-
+				${pres.termNumber}
+				${pres.firstName}
+				${pres.middleName}
+				${pres.lastName}
+				${pres.termStarted}
+				${pres.termEnded}
+				${pres.fact}
+				<br>
+				<img src="${pres.url}" height="500" width="500"/>
 			</div>
-		</div>
 
-	</div>
 
-	<nav aria-label="...">
-		<ul class="pagination justify-content-center">
-			<li class="page-item disabled"><a class="page-link" href="#"
-				tabindex="-1">Previous</a></li>
-			<li class="page-item"><a class="page-link" href="#">1</a></li>
-			<li class="page-item active"><a class="page-link" href="#">2
-					<span class="sr-only">(current)</span>
-			</a></li>
-			<li class="page-item"><a class="page-link" href="#">3</a></li>
-			<li class="page-item"><a class="page-link" href="#">Next</a></li>
-		</ul>
-	</nav>
-	=======
 
-				</form>
-			</div>
-		</div>
-
-	</div>
-
-	<!-- <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-		<ul class="nav nav-pills flex-column">
-			<li class="nav-item"><a class="nav-link active" href="#">List
-					of Presidents<span class="sr-only">(current)</span>
-			</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">George
-					Washington</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">John Adams</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Thomas
-					Jefferson</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">asdf</a></li>
-		</ul> -->
-
-		<!-- <ul class="nav nav-pills flex-column">
-			<li class="nav-item"><a class="nav-link" href="#">Nav item
-					again, in Nav-pill flex column</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">One more
-					nav</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Another
-					nav item</a></li>
-		</ul>
-	</nav> -->
-
-	<form action="getPresident.do" method="post"></form>
 </body>
 
 
