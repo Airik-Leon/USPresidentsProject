@@ -17,7 +17,7 @@
 </head>
 <body>
     <!--Page Bar -->
-    <nav class="navbar navbar-dark bg-dark justify-content-between">
+    <nav class="navbar navbar-dark bg-dark justify-content-between" >
         <h1>
             <a class="navbar-brand">U.S. PRESIDENTS</a>
         </h1>
