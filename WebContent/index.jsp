@@ -26,10 +26,7 @@
         <div class="row">
             <div class="col-sm">
             <!--Area for potential side nav  -->
-<%--               <div class="btn-group-vertical">
-              <c:forEach var="pres" items="presList">
-              <input type="text"  class="btn btn-primary" value="${pres.firstName}"/>
-              </c:forEach> --%>
+            
               </div>
             </div>
             <div class="container col-sm-8">
@@ -66,10 +63,15 @@
                     <br>
                     <!-- Buttons -->
                     <div class="container col-sm-6">
-                        <input class="btn btn-danger" type="button"
-                            value="backward" name="back" /> <input
-                            class="btn btn-primary" type="button"
+                        <form action="backward.do" method"POST">
+                           <input class="btn btn-danger" type="submit"
+                            value="backward" name="back" />
+                        </form>
+                        <form action=forward.do method="POST">
+                            <input
+                            class="btn btn-primary" type="submit"
                             value="forward" name="forward" />
+                        </form> 
                     </div>
                 </div>
             </div>
