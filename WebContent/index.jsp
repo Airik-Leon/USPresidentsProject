@@ -53,7 +53,7 @@
                 </div>
                 <!-- President Image -->
                 <div class="col-sm-12" id="presidentImg">
-                    <img class=" container rounded" width="100%"
+                    <img class="container rounded" width="100%"
                         height="100%" src="${pres.url}" />
                 </div>
                 <!--President term time and facts  -->
