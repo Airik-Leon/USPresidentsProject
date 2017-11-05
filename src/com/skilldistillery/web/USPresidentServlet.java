@@ -33,10 +33,10 @@ public class USPresidentServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-	
 		ServletContext context = getServletContext();
 		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");		
 		HttpSession session = req.getSession();
+		
 		presList = dao.getListPresidents();
 		session.setAttribute("presList", presList);
 		
@@ -50,12 +50,9 @@ public class USPresidentServlet extends HttpServlet {
 		session.setAttribute("pres", pres);
 		
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
-		
-		
 	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 		doPost(request, response);
 	}
 }
