@@ -75,11 +75,36 @@ public class USPresidentServlet extends HttpServlet {
 			}
 			catch(NumberFormatException nfe) {
 				switch(searchBar) {
-				case"Democrat": presList=dao.getPresidentsByParty(searchBar);break;
-				case"Republican":presList=dao.getPresidentsByParty(searchBar);break;
-				case"Democratic-Republican":presList=dao.getPresidentsByParty(searchBar);break;
-				case"Federalist":presList=dao.getPresidentsByParty(searchBar);break;
-				case"Independent":presList=dao.getPresidentsByParty(searchBar);break;
+				case"Democrat": 
+					presList=dao.getPresidentsByParty(searchBar);
+					count= 0; 
+					pres = presList.get(count);
+					break;
+				case"Republican":
+					presList=dao.getPresidentsByParty(searchBar);
+					count = 0; 
+					pres = presList.get(count);
+					break;
+				case"Democratic-Republican":
+					presList=dao.getPresidentsByParty(searchBar);
+					count = 0;
+					pres = presList.get(count);
+					break;
+				case"Federalist":
+					presList=dao.getPresidentsByParty(searchBar);
+					count = 0; 
+					pres = presList.get(count);
+					break;
+				case"Independent":
+					presList=dao.getPresidentsByParty(searchBar);
+					count =0; 
+					pres = presList.get(count);
+					break;
+				case "Whig":
+					presList=dao.getPresidentsByParty(searchBar);
+					count =0; 
+					pres = presList.get(count);
+					break;	
 				}	
 			}	
 		}
