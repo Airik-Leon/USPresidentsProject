@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>US Presidents</title>
+<title>U.S. Presidents</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -56,7 +56,7 @@
                 </form>
                 <!--President Header -->
                 <div class="container">
-                    <h3>${pres.termNumber}:${pres.firstName}
+                    <h3>${pres.termNumber}: ${pres.firstName}
                         ${pres.middleName} ${pres.lastName}</h3>
                 </div>
                 <!-- President Image -->
@@ -66,7 +66,7 @@
                 </div>
                 <!--President term time and facts  -->
                 <div class="container col-sm-12">
-                    <h4>${pres.termStarted}to${pres.termEnded}</h4>
+                    <h4>${pres.termStarted} to ${pres.termEnded}</h4>
                     <p>${pres.fact}</p>
                 </div>
                 <br>
