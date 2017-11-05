@@ -75,12 +75,12 @@
                     <form class="container" action="backward.do"
                         method="POST">
                         <input class="btn btn-primary" type="submit"
-                            value="back" name="back" />
+                            value="<" name="back" />
                     </form>
                     <form class="container" action=forward.do
                         method="POST">
                         <input class="btn btn-primary" type="submit"
-                            value="forward" name="forward" />
+                            value=">" name="forward" />
                     </form>
                 </div>
             </div>
