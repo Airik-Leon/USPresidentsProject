@@ -31,6 +31,7 @@
                         <input class="btn btn-primary" type="submit" value="Democrat" name="dem" />
                         <input class="btn btn-danger" type="submit" value="Republican" name="repub" />
                         <input class="btn btn-info" type="submit" value="Democratic-Republican" name="demRepub"/>
+                        <input class="btn btn-warning" type="submit" value="Federalist" name="fed"/>
                         <input class="btn btn-secondary" type="submit" value="Whig" name="whig"/>
                     </div>
                 </div>
