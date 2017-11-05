@@ -91,7 +91,15 @@
                 </div>
                 <!--President term time and facts  -->
                 <div class="container col-sm-12" id="presidentTermAndFactsComponent">
-                    <h4>${pres.termStarted} to ${pres.termEnded}</h4>
+                <c:choose>
+                     <c:when test="${pres.termEnded == 0}">
+                      <c:set var = "yearEnded" value="present"></c:set>
+                     </c:when>
+                     <c:otherwise>
+                        <c:set var="yearEnded" value="${pres.termEnded}"></c:set>
+                     </c:otherwise>
+                </c:choose>
+                     <h4>${pres.termStarted} to ${yearEnded}</h4>
                     <p>${pres.fact}</p>
                 </div>
                 <br>
@@ -100,8 +108,8 @@
                     style="margin: 0px auto; display: block;">
                     <form class="container" action="backward.do"
                         method="POST">
-                        <input class="btn btn-primary" type="submit"
-                            value="<" name=" back" />
+                        <input class="btn btn-primary" type="submit" name="back"
+                            value="<"/>
                     </form>
                     <form class="container" action=forward.do
                         method="POST">

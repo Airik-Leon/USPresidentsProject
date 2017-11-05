@@ -95,7 +95,12 @@ public class President {
 		this.lastName = lastName;
 	}
 	public int getTermEnded() {
-		return this.termEnded.getYear(); 
+		if(this.termEnded == null) {
+			return 0; 
+		}
+		else {
+			return this.termEnded.getYear();
+		}
 	}
 	public int getTermStarted() {
 		return this.termStarted.getYear(); 
