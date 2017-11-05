@@ -9,6 +9,8 @@
 <title>US Presidents</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="WebContent/WEB-INF/presidentSeal.png" type="image/png" sizes="16x16">
+
 <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -17,25 +19,32 @@
 </head>
 <body>
     <!--Page Bar -->
-    <nav class="navbar navbar-dark bg-dark justify-content-between" >
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
         <h1>
             <a class="navbar-brand">U.S. PRESIDENTS</a>
         </h1>
     </nav>
-<br/>
+    <br />
     <div class="container">
-        <div class="row" style="float:left;">
-            <div class="col-sm">
+        <div class="row" style="float: left;">
+            <form action="party.do" method="POST">
                 <div class=" btn-group-vertical col-sm">
                     <div class="btn-group-vertical">
-                        <input class="btn btn-primary" type="submit" value="Democrat" name="dem" />
-                        <input class="btn btn-danger" type="submit" value="Republican" name="repub" />
-                        <input class="btn btn-info" type="submit" value="Democratic-Republican" name="demRepub"/>
-                        <input class="btn btn-warning" type="submit" value="Federalist" name="fed"/>
-                        <input class="btn btn-secondary" type="submit" value="Whig" name="whig"/>
+                        <input class="btn btn-primary" type="submit"
+                            value="Democrat" name="dem" /> <input
+                            class="btn btn-danger" type="submit"
+                            value="Republican" name="repub" /> <input
+                            class="btn btn-info" type="submit"
+                            value="Democratic-Republican"
+                            name="demRepub" /> <input
+                            class="btn btn-warning" type="submit"
+                            value="Federalist" name="fed" /> <input
+                            class="btn btn-secondary" type="submit"
+                            value="Whig" name="whig" />
                     </div>
                 </div>
-            </div>
+            </form>
+            <div class="col-sm"></div>
         </div>
         <div class="row col-sm-8">
             <!--Search -->
@@ -71,11 +80,12 @@
                 </div>
                 <br>
                 <!-- Buttons -->
-                <div class="container-fluid" id="buttonComponent" style="margin:0px auto; display:block;">
+                <div class="container-fluid" id="buttonComponent"
+                    style="margin: 0px auto; display: block;">
                     <form class="container" action="backward.do"
                         method="POST">
                         <input class="btn btn-primary" type="submit"
-                            value="<" name="back" />
+                            value="<" name=" back" />
                     </form>
                     <form class="container" action=forward.do
                         method="POST">
@@ -85,9 +95,9 @@
                 </div>
             </div>
         </div>
-                <!--Area for potential side nav  -->
+        <!--Area for potential side nav  -->
         <div class="row">
-
+        
         </div>
     </div>
 </body>
