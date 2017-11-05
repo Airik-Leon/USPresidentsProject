@@ -69,9 +69,11 @@ public class USPresidentServlet extends HttpServlet {
 			try {
 				if(searchBar != null) {
 					termInt = Integer.parseInt(searchBar);
-					if(termInt >= 0  &&  termInt <= dao.getListPresidents().size()) {
-						count=termInt;
-						pres = dao.getPresident(count);
+					if(termInt >= 0 &&  termInt <= presList.size()) {
+						termInt--;
+							count = termInt;
+							count=termInt;
+							pres = presList.get(count);				
 					}
 					else {
 						throw new NumberFormatException();
