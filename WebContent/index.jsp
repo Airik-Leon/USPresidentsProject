@@ -63,15 +63,15 @@
                 </div>
                 <br>
                 <!-- Buttons -->
-                <div class="container-fluid" id="buttonComponent" >
+                <div class="container-fluid" id="buttonComponent" style="margin:0px auto; display:block;">
                     <form class="container" action="backward.do"
                         method="POST">
-                        <input class="btn btn-primary" type="submit" value="back" name="back"/>
+                        <input class="btn btn-primary" type="submit" value="<---" name="back" />
                     </form>
                     <form class="container" action=forward.do
                         method="POST">
                         <input class="btn btn-primary" type="submit"
-                            value="forward" name="forward" />
+                            value="--->" name="forward" />
                     </form>
                 </div>
             </div>
