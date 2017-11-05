@@ -17,69 +17,47 @@
 </head>
 
 <body>
-
-<<<<<<< HEAD
+    <!--Page Bar -->
     <nav class="navbar navbar-dark bg-dark justify-content-between">
         <h1>
             <a class="navbar-brand">U.S. PRESIDENTS</a>
         </h1>
-<!--         <form action="pres.do" method="POST">
-            <input type="text" name="term" /> <input type="submit"
-                value="Search" />
-        </form> -->
     </nav>
-    <form action="pres.do" method="POST">
-        <div class="col-sm-4">
-            <div class="input-group">
-                <input type="text" class="form-control"
-                    placeholder="Search for..."
-                    aria-label="Search for..." name="term"> <span
-                    class="input-group-btn">
-                    <input class="btn btn-secondary" type="submit" value="Search" />
-                </span>
+    <br/>
+    <!--Search -->
+    <div class="container col-sm-6" id="presidentComponent">
+        <form action="pres.do" method="POST">
+            <div class="col-sm-8">
+                <div class="input-group">
+                    <input type="text" class="form-control"
+                        placeholder="Search for..."
+                        aria-label="Search for..." name="term">
+                    <span class="input-group-btn"> <input
+                        class="btn btn-secondary" type="submit"
+                        value="Search" />
+                    </span>
+                </div>
             </div>
+        </form>
+        <!--President Header -->
+        <div class="container"><h3>${pres.termNumber}: ${pres.firstName} ${pres.middleName} ${pres.lastName} </h3></div>
+        <!-- President Image -->
+        <div class="col-sm-8">
+           <img src="${pres.url}" height="500" width=450 />
         </div>
-    </form>
-
-
-
-    <div class="col-sm-8">
-        ${pres.termNumber} ${pres.firstName} ${pres.middleName}
-        ${pres.lastName} ${pres.termStarted} ${pres.termEnded}
-        ${pres.fact} <br /> <img src="${pres.url}" height="500"
-            width=450 />
+        <!--President term time and facts  -->
+        <div class="container">
+           <h4> ${pres.termStarted} to ${pres.termEnded}</h4>
+           <p> ${pres.fact} </p>
+        </div>
+        <br>        
+        <!-- Buttons -->
+        <div class="container col-sm-6">
+            <input class="btn btn-danger" type="button" value="backward"/>
+            <input class="btn btn-primary" type="button" value="forward"/>        
+        </div>
     </div>
-=======
-	<nav class="navbar navbar-dark bg-dark justify-content-between">
-		<a class="navbar-brand"><h1>U.S. PRESIDENTS</h1></a>
-		<form action="pres.do" method="POST">
-		<input type="text" name="term"/>
-		<input type="submit" value="Search"/>
-		</form>
-	</nav>
-	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm">
-				${pres.termNumber}
-				${pres.firstName}
-				${pres.middleName}
-				${pres.lastName}
-				${pres.termStarted}
-				${pres.termEnded}
-				${pres.fact}
-				<br>
-				<img src="${pres.url}" height="500" width="500"/>
-			</div>
-		</div>
-	</div>
->>>>>>> 520f6c3d6eb42bd7588254d756e7377b83449ac4
-
-
-
 </body>
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -91,7 +69,5 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
     integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-
-
 </html>
 
