@@ -30,10 +30,10 @@
             <div class="col-sm-8">
                 <div class="input-group">
                     <input type="text" class="form-control"
-                        placeholder="Search for..."
+                        placeholder="Term Number,Party"
                         aria-label="Search for..." name="term">
                     <span class="input-group-btn"> <input
-                        class="btn btn-secondary" type="submit"
+                        class="btn btn-success" type="submit"
                         value="Search" />
                     </span>
                 </div>
