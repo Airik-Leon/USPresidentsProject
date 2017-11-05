@@ -41,6 +41,7 @@
                             value="Federalist" name="fed" /> <input
                             class="btn btn-secondary" type="submit"
                             value="Whig" name="whig" />
+                            <input class="btn btn-dark" type="submit" value="All Presidents" name="reset"/>
                     </div>
                 </div>
             </form>
