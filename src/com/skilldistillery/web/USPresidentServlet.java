@@ -50,6 +50,31 @@ public class USPresidentServlet extends HttpServlet {
 		else if(req.getParameter("back") != null ) {
 			backButton();
 		}
+		else if(req.getParameter("dem") != null) {
+			count = 0;
+			presList = dao.getPresidentsByParty("Democrat");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("repub") != null){
+			count = 0;
+			presList = dao.getPresidentsByParty("Republican");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("demRepub") != null){
+			count = 0;
+			presList = dao.getPresidentsByParty("Democratic-Republican");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("fed")!= null) {
+			count = 0;
+			presList = dao.getPresidentsByParty("Federalist");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("whig") !=null) {
+			count = 0;
+			presList = dao.getPresidentsByParty("Whig");
+			pres = presList.get(count);
+		}
 		else {
 			termAndParty(searchBar);
 		}
