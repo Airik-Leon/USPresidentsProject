@@ -63,7 +63,7 @@
                     <br>
                     <!-- Buttons -->
                     <div class="container col-sm-6">
-                        <form action="backward.do" method"POST">
+                        <form action="backward.do" method="POST">
                            <input class="btn btn-danger" type="submit"
                             value="backward" name="back" />
                         </form>

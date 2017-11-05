@@ -22,12 +22,14 @@ public class USPresidentServlet extends HttpServlet {
 	private PresidentDAO dao;
 	private List<President> presList;
 	private President pres;
+	private int count=0;
 
 	@Override
 	public void init() throws ServletException {
 		ServletContext context = getServletContext();
 		dao = new USPresidentDAOImpl(context);
-		pres  = dao.getListPresidents().get(0);
+		presList =   dao.getListPresidents();
+		pres = presList.get(count);
 		context.setAttribute("dao", dao);
 	}
 
@@ -37,26 +39,51 @@ public class USPresidentServlet extends HttpServlet {
 		ServletContext context = getServletContext();
 		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");		
 		HttpSession session = req.getSession();
-		presList = dao.getListPresidents();
+//		presList = dao.getListPresidents();
+		
 		session.setAttribute("presList", presList);
-
 		String searchBar = req.getParameter("searchBar");
-		int termInt=0;
-		try {
-			if(searchBar != null) {
-				termInt = Integer.parseInt(searchBar);
-				pres = dao.getPresident(termInt);
-			} 	
+		String forward = req.getParameter("forward");
+		
+		if(req.getParameter("forward") != null) {
+			if(count == presList.size()-1) {
+				count = 0; 
+				pres = presList.get(count);
+			}
+			else {
+				count++;
+				pres = presList.get(count);			
+			}
 		}
-		catch(NumberFormatException nfe) {
-			switch(searchBar) {
+		else if(req.getParameter("back") != null ) {
+			if(count == 0) {
+				count = presList.size()-1; 
+				pres = presList.get(count);
+			}
+			else {
+				count--;
+				pres = presList.get(count);		
+			}
+		}
+		else {
+			int termInt=0;
+			try {
+				if(searchBar != null) {
+					termInt = Integer.parseInt(searchBar);
+					pres = dao.getPresident(termInt);
+				} 	
+			}
+			catch(NumberFormatException nfe) {
+				switch(searchBar) {
 				case"Democrat": presList=dao.getPresidentsByParty(searchBar);break;
 				case"Republican":presList=dao.getPresidentsByParty(searchBar);break;
 				case"Democratic-Republican":presList=dao.getPresidentsByParty(searchBar);break;
 				case"Federalist":presList=dao.getPresidentsByParty(searchBar);break;
 				case"Independent":presList=dao.getPresidentsByParty(searchBar);break;
+				}	
 			}	
 		}
+		
 		session.setAttribute("pres", pres);
 		req.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
