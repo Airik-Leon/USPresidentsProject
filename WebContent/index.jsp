@@ -32,7 +32,7 @@
               </c:forEach> --%>
               </div>
             </div>
-            <div class="container col-sm-9">
+            <div class="container col-sm-8">
                 <!--Search -->
                 <div class="container col-sm-8" id="presidentComponent">
                     <form action="pres.do" method="POST">
@@ -55,12 +55,11 @@
                             ${pres.middleName} ${pres.lastName}</h3>
                     </div>
                     <!-- President Image -->
-                    <div class="col-sm-8">
-                        <img class="rounded" src="${pres.url}"
-                            height="500" width=450 />
+                    <div class="col-sm-12">
+                        <img class=" container rounded" width="100%" height="100%"src="${pres.url}"/>
                     </div>
                     <!--President term time and facts  -->
-                    <div class="container">
+                    <div class="container col-sm-12">
                         <h4>${pres.termStarted} to ${pres.termEnded}</h4>
                         <p>${pres.fact}</p>
                     </div>
@@ -75,7 +74,6 @@
                 </div>
             </div>
         </div>
-    </div>
     <br />
 
 </body>
