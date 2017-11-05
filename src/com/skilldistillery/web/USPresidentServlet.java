@@ -23,12 +23,13 @@ public class USPresidentServlet extends HttpServlet {
 	private List<President> presList;
 	private President pres;
 	private int count=0;
+	private int termInt=0;
 
 	@Override
 	public void init() throws ServletException {
 		ServletContext context = getServletContext();
 		dao = new USPresidentDAOImpl(context);
-		presList =   dao.getListPresidents();
+		presList = dao.getListPresidents();
 		pres = presList.get(count);
 		context.setAttribute("dao", dao);
 	}
@@ -45,6 +46,7 @@ public class USPresidentServlet extends HttpServlet {
 		
 		if(req.getParameter("forward") != null) {
 			if(count == presList.size()-1) {
+				presList = dao.getListPresidents();
 				count = 0; 
 				pres = presList.get(count);
 			}
@@ -55,7 +57,7 @@ public class USPresidentServlet extends HttpServlet {
 		}
 		else if(req.getParameter("back") != null ) {
 			if(count == 0) {
-				count = presList.size(); 
+				count = presList.size()-1; 
 				pres = presList.get(count);
 			}
 			else {
@@ -64,13 +66,12 @@ public class USPresidentServlet extends HttpServlet {
 			}
 		}
 		else {
-			int termInt=0;
 			try {
 				if(searchBar != null) {
-					
 					termInt = Integer.parseInt(searchBar);
 					if(termInt >= 0  &&  termInt <= dao.getListPresidents().size()) {
-						pres = dao.getPresident(termInt);
+						count=termInt;
+						pres = dao.getPresident(count);
 					}
 					else {
 						throw new NumberFormatException();
