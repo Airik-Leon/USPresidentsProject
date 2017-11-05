@@ -25,9 +25,10 @@
 		<input type="submit" value="Search"/>
 		</form>
 	</nav>
-
-		
-			<div class="col-sm-8">
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm">
 				${pres.termNumber}
 				${pres.firstName}
 				${pres.middleName}
@@ -38,6 +39,8 @@
 				<br>
 				<img src="${pres.url}" height="500" width="500"/>
 			</div>
+		</div>
+	</div>
 
 
 
