@@ -25,57 +25,57 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-            <!--Area for potential side nav  -->
-            
-              </div>
+                <!--Area for potential side nav  -->
+
             </div>
-            <div class="container col-sm-8">
-                <!--Search -->
-                <div class="container col-sm-8" id="presidentComponent">
-                    <form action="pres.do" method="POST">
-                        <div class="col-sm-8">
-                            <div class="input-group">
-                                <input type="text" class="form-control"
-                                    placeholder="Term Number,Party"
-                                    aria-label="Search for..."
-                                    name="searchBar"> <span
-                                    class="input-group-btn"> <input
-                                    class="btn btn-success"
-                                    type="submit" value="Search" />
-                                </span>
-                            </div>
+        </div>
+        <div class="container col-sm-8">
+            <!--Search -->
+            <div class="container col-sm-8" id="presidentComponent">
+                <form action="pres.do" method="POST">
+                    <div class="col-sm-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control"
+                                placeholder="Term Number,Party"
+                                aria-label="Search for..."
+                                name="searchBar"> <span
+                                class="input-group-btn"> <input
+                                class="btn btn-success" type="submit"
+                                value="Search" />
+                            </span>
                         </div>
-                    </form>
-                    <!--President Header -->
-                    <div class="container">
-                        <h3>${pres.termNumber}: ${pres.firstName}
-                            ${pres.middleName} ${pres.lastName}</h3>
                     </div>
-                    <!-- President Image -->
-                    <div class="col-sm-12">
-                        <img class=" container rounded" width="100%" height="100%"src="${pres.url}"/>
-                    </div>
-                    <!--President term time and facts  -->
-                    <div class="container col-sm-12">
-                        <h4>${pres.termStarted} to ${pres.termEnded}</h4>
-                        <p>${pres.fact}</p>
-                    </div>
-                    <br>
-                    <!-- Buttons -->
-                    <div class="container col-sm-6">
-                        <form action="backward.do" method="POST">
-                           <input class="btn btn-danger" type="submit"
+                </form>
+                <!--President Header -->
+                <div class="container">
+                    <h3>${pres.termNumber}:${pres.firstName}
+                        ${pres.middleName} ${pres.lastName}</h3>
+                </div>
+                <!-- President Image -->
+                <div class="col-sm-12" id="presidentImg">
+                    <img class=" container rounded" width="100%"
+                        height="100%" src="${pres.url}" />
+                </div>
+                <!--President term time and facts  -->
+                <div class="container col-sm-12">
+                    <h4>${pres.termStarted}to ${pres.termEnded}</h4>
+                    <p>${pres.fact}</p>
+                </div>
+                <br>
+                <!-- Buttons -->
+                <div class="container col-sm-6" id="buttonComponent">
+                    <form action="backward.do" method="POST">
+                        <input class="btn btn-danger" type="submit"
                             value="backward" name="back" />
-                        </form>
-                        <form action=forward.do method="POST">
-                            <input
-                            class="btn btn-primary" type="submit"
+                    </form>
+                    <form action=forward.do method="POST">
+                        <input class="btn btn-primary" type="submit"
                             value="forward" name="forward" />
-                        </form> 
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     <br />
 
 </body>

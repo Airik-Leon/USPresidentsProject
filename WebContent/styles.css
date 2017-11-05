@@ -2,11 +2,10 @@ h1 {
 	color: white;
 }
 #presidentComponent{
-	background-color:#eaeaea;
+	background-color:#e7e9e9;
 	border-radius:30px;
 	padding:10px;
-}
-#presidentComponent img{
+	box-shadow: 5px 5px 5px silver; 
 }
 
 
