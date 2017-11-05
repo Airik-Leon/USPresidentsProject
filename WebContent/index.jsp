@@ -90,7 +90,7 @@
                         src="${pres.url}" />
                 </div>
                 <!--President term time and facts  -->
-                <div class="container col-sm-12">
+                <div class="container col-sm-12" id="presidentTermAndFactsComponent">
                     <h4>${pres.termStarted} to ${pres.termEnded}</h4>
                     <p>${pres.fact}</p>
                 </div>
@@ -110,9 +110,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="row">
-                
         </div>
     </div>
 </body>
