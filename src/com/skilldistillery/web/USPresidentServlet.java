@@ -41,14 +41,16 @@ public class USPresidentServlet extends HttpServlet {
 		session.setAttribute("presList", presList);
 		
 		int termInt = 0;
-		String term = req.getParameter("term");
-		if(term != null) {
-		termInt = Integer.parseInt(term);
+		String searchBar = req.getParameter("searchBar");
+		if(searchBar != null) {
+		termInt = Integer.parseInt(searchBar);
 		} 
-		
+//		switch(searchBar) {
+//		
+//		}
 		President pres = dao.getPresident(termInt);
 		session.setAttribute("pres", pres);
-		
+		req.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
 	}
 

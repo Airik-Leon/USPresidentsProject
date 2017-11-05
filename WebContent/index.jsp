@@ -15,7 +15,6 @@
     crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <!--Page Bar -->
     <nav class="navbar navbar-dark bg-dark justify-content-between">
@@ -23,40 +22,62 @@
             <a class="navbar-brand">U.S. PRESIDENTS</a>
         </h1>
     </nav>
-    <br/>
-    <!--Search -->
-    <div class="container col-sm-6" id="presidentComponent">
-        <form action="pres.do" method="POST">
-            <div class="col-sm-8">
-                <div class="input-group">
-                    <input type="text" class="form-control"
-                        placeholder="Term Number,Party"
-                        aria-label="Search for..." name="term">
-                    <span class="input-group-btn"> <input
-                        class="btn btn-success" type="submit"
-                        value="Search" />
-                    </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            <!--Area for potential side nav  -->
+<%--               <div class="btn-group-vertical">
+              <c:forEach var="pres" items="presList">
+              <input type="text"  class="btn btn-primary" value="${pres.firstName}"/>
+              </c:forEach> --%>
+              </div>
+            </div>
+            <div class="container col-sm-9">
+                <!--Search -->
+                <div class="container col-sm-8" id="presidentComponent">
+                    <form action="pres.do" method="POST">
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control"
+                                    placeholder="Term Number,Party"
+                                    aria-label="Search for..."
+                                    name="searchBar"> <span
+                                    class="input-group-btn"> <input
+                                    class="btn btn-success"
+                                    type="submit" value="Search" />
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <!--President Header -->
+                    <div class="container">
+                        <h3>${pres.termNumber}: ${pres.firstName}
+                            ${pres.middleName} ${pres.lastName}</h3>
+                    </div>
+                    <!-- President Image -->
+                    <div class="col-sm-8">
+                        <img class="rounded" src="${pres.url}"
+                            height="500" width=450 />
+                    </div>
+                    <!--President term time and facts  -->
+                    <div class="container">
+                        <h4>${pres.termStarted} to ${pres.termEnded}</h4>
+                        <p>${pres.fact}</p>
+                    </div>
+                    <br>
+                    <!-- Buttons -->
+                    <div class="container col-sm-6">
+                        <input class="btn btn-danger" type="button"
+                            value="backward" name="back" /> <input
+                            class="btn btn-primary" type="button"
+                            value="forward" name="forward" />
+                    </div>
                 </div>
             </div>
-        </form>
-        <!--President Header -->
-        <div class="container"><h3>${pres.termNumber}: ${pres.firstName} ${pres.middleName} ${pres.lastName} </h3></div>
-        <!-- President Image -->
-        <div class="col-sm-8">
-           <img src="${pres.url}" height="500" width=450 />
-        </div>
-        <!--President term time and facts  -->
-        <div class="container">
-           <h4> ${pres.termStarted} to ${pres.termEnded}</h4>
-           <p> ${pres.fact} </p>
-        </div>
-        <br>        
-        <!-- Buttons -->
-        <div class="container col-sm-6">
-            <input class="btn btn-danger" type="button" value="backward"/>
-            <input class="btn btn-primary" type="button" value="forward"/>        
         </div>
     </div>
+    <br />
+
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
