@@ -33,10 +33,10 @@
             <!--Search -->
             <div class="container col-sm-8" id="presidentComponent">
                 <form action="pres.do" method="POST">
-                    <div class="col-sm-8">
+                    <div class="col-sm-12">
                         <div class="input-group">
                             <input type="text" class="form-control"
-                                placeholder="Term Number,Party"
+                                placeholder="Search by: Term Number, Party"
                                 aria-label="Search for..."
                                 name="searchBar"> <span
                                 class="input-group-btn"> <input
@@ -63,7 +63,7 @@
                 </div>
                 <br>
                 <!-- Buttons -->
-                <div class="container-fluid" id="buttonComponent">
+                <div class="container-fluid" id="buttonComponent" >
                     <form class="container" action="backward.do"
                         method="POST">
                         <input class="btn btn-primary" type="submit" value="back" name="back"/>
