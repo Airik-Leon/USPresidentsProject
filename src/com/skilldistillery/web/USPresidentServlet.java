@@ -39,11 +39,9 @@ public class USPresidentServlet extends HttpServlet {
 		ServletContext context = getServletContext();
 		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");		
 		HttpSession session = req.getSession();
-//		presList = dao.getListPresidents();
 		
 		session.setAttribute("presList", presList);
 		String searchBar = req.getParameter("searchBar");
-		String forward = req.getParameter("forward");
 		
 		if(req.getParameter("forward") != null) {
 			if(count == presList.size()-1) {
@@ -70,7 +68,12 @@ public class USPresidentServlet extends HttpServlet {
 			try {
 				if(searchBar != null) {
 					termInt = Integer.parseInt(searchBar);
-					pres = dao.getPresident(termInt);
+					if(termInt >= 0  &&  termInt <= dao.getListPresidents().size()-1) {
+						pres = dao.getPresident(termInt);
+					}
+					else {
+						throw new NumberFormatException();
+					}
 				} 	
 			}
 			catch(NumberFormatException nfe) {
@@ -105,10 +108,13 @@ public class USPresidentServlet extends HttpServlet {
 					count =0; 
 					pres = presList.get(count);
 					break;	
+				 default:
+					 presList= dao.getListPresidents();
+					 count = 0; 
+					 pres = presList.get(count);	
 				}	
 			}	
 		}
-		
 		session.setAttribute("pres", pres);
 		req.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
