@@ -18,6 +18,7 @@
 
 <body>
 
+<<<<<<< HEAD
     <nav class="navbar navbar-dark bg-dark justify-content-between">
         <h1>
             <a class="navbar-brand">U.S. PRESIDENTS</a>
@@ -48,6 +49,31 @@
         ${pres.fact} <br /> <img src="${pres.url}" height="500"
             width=450 />
     </div>
+=======
+	<nav class="navbar navbar-dark bg-dark justify-content-between">
+		<a class="navbar-brand"><h1>U.S. PRESIDENTS</h1></a>
+		<form action="pres.do" method="POST">
+		<input type="text" name="term"/>
+		<input type="submit" value="Search"/>
+		</form>
+	</nav>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm">
+				${pres.termNumber}
+				${pres.firstName}
+				${pres.middleName}
+				${pres.lastName}
+				${pres.termStarted}
+				${pres.termEnded}
+				${pres.fact}
+				<br>
+				<img src="${pres.url}" height="500" width="500"/>
+			</div>
+		</div>
+	</div>
+>>>>>>> 520f6c3d6eb42bd7588254d756e7377b83449ac4
 
 
 
