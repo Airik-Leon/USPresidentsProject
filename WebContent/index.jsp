@@ -49,11 +49,11 @@
             </form>
             <br/>
             <!--PresidentsListComponent  -->
-            <div class=" container col-sm">
+            <div class=" container col-sm" id="presidentsListComponent">
             <form action="selectPresident.do" method="POST">
                 <select class="list-group" name="ListOfPresidents">
                     <c:forEach var="president" items="${presList}">
-                        <option class="list-group-item" value="${president.termNumber}">${president.termNumber}: ${president.firstName} ${president.lastName }</option>
+                        <option class="list-group-item" value="${president.termNumber}">${president.termNumber}: ${president.firstName} ${president.middleName} ${president.lastName }</option>
                     </c:forEach>
                 </select>  
                 <br/>
