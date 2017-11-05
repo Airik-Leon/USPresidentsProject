@@ -45,9 +45,6 @@ public class USPresidentServlet extends HttpServlet {
 		if(term != null) {
 		termInt = Integer.parseInt(term);
 		} 
-		else {
-		termInt = 1;	
-		}
 		
 		President pres = dao.getPresident(termInt);
 		session.setAttribute("pres", pres);
