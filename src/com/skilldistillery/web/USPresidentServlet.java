@@ -71,7 +71,6 @@ public class USPresidentServlet extends HttpServlet {
 					termInt = Integer.parseInt(searchBar);
 					if(termInt >= 0 &&  termInt <= presList.size()) {
 						termInt--;
-							count = termInt;
 							count=termInt;
 							pres = presList.get(count);				
 					}
