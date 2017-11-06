@@ -99,7 +99,7 @@ public class USPresidentServlet extends HttpServlet {
 		try {
 			if(searchBar != null) {
 				termInt = Integer.parseInt(searchBar);
-				if(termInt >= 0 &&  termInt <= presList.size()) {
+				if(termInt >= 1 &&  termInt <= presList.size()) {
 					termInt--;
 						count=termInt;
 						pres = presList.get(count);				
