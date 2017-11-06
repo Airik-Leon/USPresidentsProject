@@ -88,6 +88,7 @@ public class USPresidentServlet extends HttpServlet {
 			termAndParty(searchBar);
 		}
 		session.setAttribute("pres", pres);
+		req.setAttribute("count", count);
 		req.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
 	}

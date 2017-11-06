@@ -21,7 +21,7 @@
     <!--Page Bar -->
     <nav class="navbar navbar-dark bg-dark justify-content-between">
         <h1>
-            <a class="navbar-brand">U.S. PRESIDENTS</a>
+            <a class="navbar-brand" href="WebContent/index.jsp">U.S. PRESIDENTS</a>
         </h1>
     </nav>
     <br />
@@ -53,7 +53,15 @@
             <form action="selectPresident.do" method="POST">
                 <select class="list-group" name="ListOfPresidents">
                     <c:forEach var="president" items="${presList}">
-                        <option class="list-group-item" value="${president.termNumber}">${president.termNumber}: ${president.firstName} ${president.middleName} ${president.lastName }</option>
+                <c:choose>
+                     <c:when test="${count +1 == president.termNumber}">
+                          <c:set var="selected" value="selected"></c:set>
+                     </c:when>
+                     <c:otherwise>
+                          <c:set var="selected" value=""></c:set>
+                     </c:otherwise>
+                </c:choose>
+                        <option class="list-group-item" value="${president.termNumber}" ${selected}>${president.termNumber}: ${president.firstName} ${president.middleName} ${president.lastName }</option> 
                     </c:forEach>
                 </select>  
                 <br/>
@@ -85,8 +93,8 @@
                         ${pres.middleName} ${pres.lastName}</h3>
                 </div>
                 <!-- President Image -->
-                <div class="col-sm-12" id="presidentImg">
-                    <img class="container" width="100%" height="100%"
+                <div class="col-sm-12 rounded" id="presidentImg">
+                    <img class="container rounded" width="100%" height="100%"
                         src="${pres.url}" />
                 </div>
                 <!--President term time and facts  -->
@@ -120,6 +128,11 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+        <span class="text-muted">Presidents search application</span>
+      </div>
+    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
