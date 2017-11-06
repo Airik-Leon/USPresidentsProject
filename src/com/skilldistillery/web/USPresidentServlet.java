@@ -33,9 +33,6 @@ public class USPresidentServlet extends HttpServlet {
 		pres = presList.get(count);
 		context.setAttribute("dao", dao);
 	}
-
-	public USPresidentServlet() {
-	}
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		ServletContext context = getServletContext();
 		PresidentDAO dao = (PresidentDAO) context.getAttribute("dao");		
@@ -44,51 +41,33 @@ public class USPresidentServlet extends HttpServlet {
 		session.setAttribute("presList", presList);
 		String searchBar = req.getParameter("searchBar");
 		
-		if(req.getParameter("forward") != null) {
-			forwardButton();
-		}
-		else if(req.getParameter("back") != null ) {
-			backButton();
-		}
-		else if(req.getParameter("dem") != null) {
-			count = 0;
-			presList = dao.getPresidentsByParty("Democrat");
-			pres = presList.get(count);
-		}
-		else if(req.getParameter("repub") != null){
-			count = 0;
-			presList = dao.getPresidentsByParty("Republican");
-			pres = presList.get(count);
-		}
-		else if(req.getParameter("demRepub") != null){
-			count = 0;
-			presList = dao.getPresidentsByParty("Democratic-Republican");
-			pres = presList.get(count);
-		}
-		else if(req.getParameter("fed")!= null) {
-			count = 0;
-			presList = dao.getPresidentsByParty("Federalist");
-			pres = presList.get(count);
-		}
-		else if(req.getParameter("whig") !=null) {
-			count = 0;
-			presList = dao.getPresidentsByParty("Whig");
-			pres = presList.get(count);
-		}
-		else if(req.getParameter("reset") != null) {
-			count =0;  
-			presList =  dao.getListPresidents(); 
-			pres = presList.get(count);
-		}
+		//Forward and backward buttons for photo carousel
+		if(req.getParameter("forward") != null) {forwardButton();}
+		else if(req.getParameter("back") != null ) { backButton();}
+		
+		//Button functionality for retrieving party lists
+		else if(req.getParameter("Democrat") != null){termAndParty(req.getParameter("Democrat"));}
+		else if(req.getParameter("Republican") != null){termAndParty(req.getParameter("Republican"));}
+		else if(req.getParameter("Democratic-Republican") != null){termAndParty(req.getParameter("Democratic-Republican"));}
+		else if(req.getParameter("Federalist")!= null) {termAndParty(req.getParameter("Federalist"));}
+		else if(req.getParameter("Whig") !=null) {termAndParty(req.getParameter("Whig"));}
+		else if(req.getParameter("reset") != null) {termAndParty(req.getParameter("reset"));}
+		
+		// Retrieve the president selected from the dropdown menu
 		else if(req.getParameter("ListOfPresidents") != null) {
 			presList = dao.getListPresidents();
 			termAndParty(req.getParameter("ListOfPresidents"));
 		}
+		//If none of the above the search bar was used so see was typed in the search bar (termNumber,or party are viable inputs)
 		else {
 			termAndParty(searchBar);
 		}
+		
+		//Sets a temporary president obj that is changed
 		session.setAttribute("pres", pres);
+		//counter used to keep track of which president the user is on
 		req.setAttribute("count", count);
+		//The temp arrayList used to store all of the Presidents changes when by party and all
 		req.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
 	}

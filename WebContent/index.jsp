@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,8 @@
 <title>U.S. Presidents</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="WebContent/WEB-INF/presidentSeal.png" type="image/png" sizes="16x16">
+<link rel="icon" href="favicon.ico"/>
+
 
 <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -33,16 +35,16 @@
                 <div class=" btn-group-vertical col-sm">
                     <div class="btn-group-vertical">
                         <input class="btn btn-primary" type="submit"
-                            value="Democrat" name="dem" /> <input
+                            value="Democrat" name="Democrat" /> <input
                             class="btn btn-danger" type="submit"
-                            value="Republican" name="repub" /> <input
+                            value="Republican" name="Republican" /> <input
                             class="btn btn-info" type="submit"
                             value="Democratic-Republican"
-                            name="demRepub" /> <input
+                            name="Democratic-Republican" /> <input
                             class="btn btn-warning" type="submit"
-                            value="Federalist" name="fed" /> <input
+                            value="Federalist" name="Federalist" /> <input
                             class="btn btn-secondary" type="submit"
-                            value="Whig" name="whig" />
+                            value="Whig" name="Whig" />
                             <input class="btn btn-dark" type="submit" value="All Presidents" name="reset"/>
                     </div>
                 </div>
