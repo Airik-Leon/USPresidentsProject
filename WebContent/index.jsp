@@ -54,7 +54,7 @@
                 <select class="list-group" name="ListOfPresidents">
                     <c:forEach var="president" items="${presList}">
                 <c:choose>
-                     <c:when test="${count +1 == president.termNumber}">
+                     <c:when test="${count+1 == president.termNumber}">
                           <c:set var="selected" value="selected"></c:set>
                      </c:when>
                      <c:otherwise>

@@ -119,7 +119,6 @@ public class USPresidentServlet extends HttpServlet {
 	private void termAndParty(String searchBar) {
 		try {
 			if(searchBar != null) {
-				System.out.println(searchBar);
 				termInt = Integer.parseInt(searchBar);
 				if(termInt >= 0 &&  termInt <= presList.size()) {
 					termInt--;
