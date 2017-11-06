@@ -23,7 +23,6 @@ public class USPresidentServlet extends HttpServlet {
 	private List<President> presList;
 	private President pres;
 	private int count=0;
-	private int termInt=0;
 
 	@Override
 	public void init() throws ServletException {
@@ -39,6 +38,7 @@ public class USPresidentServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 		
 		session.setAttribute("presList", presList);
+		session.setAttribute("count", count);
 		String searchBar = req.getParameter("searchBar");
 		
 		//Forward and backward buttons for photo carousel
@@ -97,6 +97,7 @@ public class USPresidentServlet extends HttpServlet {
 	}
 	private void termAndParty(String searchBar) {
 		try {
+			int termInt;
 			if(searchBar != null) {
 				termInt = Integer.parseInt(searchBar);
 				if(termInt >= 1 &&  termInt <= presList.size()) {
