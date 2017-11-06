@@ -23,7 +23,7 @@
     <!--Page Bar -->
     <nav class="navbar navbar-dark bg-dark justify-content-between">
         <h1>
-            <a class="navbar-brand" href="WebContent/index.jsp">U.S. PRESIDENTS</a>
+            <a class="navbar-brand">U.S. PRESIDENTS</a>
         </h1>
     </nav>
     <br />
