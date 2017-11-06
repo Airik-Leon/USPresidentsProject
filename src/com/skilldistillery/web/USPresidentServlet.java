@@ -45,84 +45,128 @@ public class USPresidentServlet extends HttpServlet {
 		String searchBar = req.getParameter("searchBar");
 		
 		if(req.getParameter("forward") != null) {
-			if(count == presList.size()-1) {
-				count = 0; 
-				pres = presList.get(count);
-			}
-			else {
-				count++;
-				pres = presList.get(count);			
-			}
+			forwardButton();
 		}
 		else if(req.getParameter("back") != null ) {
-			if(count == 0) {
-				count = presList.size()-1; 
-				pres = presList.get(count);
-			}
-			else {
-				count--;
-				pres = presList.get(count);		
-			}
+			backButton();
+		}
+		else if(req.getParameter("dem") != null) {
+			count = 0;
+			presList = dao.getPresidentsByParty("Democrat");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("repub") != null){
+			count = 0;
+			presList = dao.getPresidentsByParty("Republican");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("demRepub") != null){
+			count = 0;
+			presList = dao.getPresidentsByParty("Democratic-Republican");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("fed")!= null) {
+			count = 0;
+			presList = dao.getPresidentsByParty("Federalist");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("whig") !=null) {
+			count = 0;
+			presList = dao.getPresidentsByParty("Whig");
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("reset") != null) {
+			count =0;  
+			presList =  dao.getListPresidents(); 
+			pres = presList.get(count);
+		}
+		else if(req.getParameter("ListOfPresidents") != null) {
+			presList = dao.getListPresidents();
+			termAndParty(req.getParameter("ListOfPresidents"));
 		}
 		else {
-			try {
-				if(searchBar != null) {
-					termInt = Integer.parseInt(searchBar);
-					if(termInt >= 0 &&  termInt <= presList.size()) {
-						termInt--;
-							count=termInt;
-							pres = presList.get(count);				
-					}
-					else {
-						throw new NumberFormatException();
-					}
-				} 	
-			}
-			catch(NumberFormatException nfe) {
-				switch(searchBar) {
-				case"Democrat": 
-					presList=dao.getPresidentsByParty(searchBar);
-					count= 0; 
-					pres = presList.get(count);
-					break;
-				case"Republican":
-					presList=dao.getPresidentsByParty(searchBar);
-					count = 0; 
-					pres = presList.get(count);
-					break;
-				case"Democratic-Republican":
-					presList=dao.getPresidentsByParty(searchBar);
-					count = 0;
-					pres = presList.get(count);
-					break;
-				case"Federalist":
-					presList=dao.getPresidentsByParty(searchBar);
-					count = 0; 
-					pres = presList.get(count);
-					break;
-				case"Independent":
-					presList=dao.getPresidentsByParty(searchBar);
-					count =0; 
-					pres = presList.get(count);
-					break;
-				case "Whig":
-					presList=dao.getPresidentsByParty(searchBar);
-					count =0; 
-					pres = presList.get(count);
-					break;	
-				 default:
-					 presList= dao.getListPresidents();
-					 count = 0; 
-					 pres = presList.get(count);	
-				}	
-			}	
+			termAndParty(searchBar);
 		}
 		session.setAttribute("pres", pres);
+		req.setAttribute("count", count);
 		req.setAttribute("presList", presList);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 		doPost(request, response);
+	}
+	private void forwardButton() {
+		if(count == presList.size()-1) {
+			count = 0; 
+			pres = presList.get(count);
+		}
+		else {
+			count++;
+			pres = presList.get(count);			
+		}
+	}
+	private void backButton() {
+		if(count == 0) {
+			count = presList.size()-1; 
+			pres = presList.get(count);
+		}
+		else {
+			count--;
+			pres = presList.get(count);		
+		}
+	}
+	private void termAndParty(String searchBar) {
+		try {
+			if(searchBar != null) {
+				termInt = Integer.parseInt(searchBar);
+				if(termInt >= 0 &&  termInt <= presList.size()) {
+					termInt--;
+						count=termInt;
+						pres = presList.get(count);				
+				}
+				else {
+					throw new NumberFormatException();
+				}
+			} 	
+		}
+		catch(NumberFormatException nfe) {
+			switch(searchBar) {
+			case"Democrat": 
+				presList=dao.getPresidentsByParty(searchBar);
+				count= 0; 
+				pres = presList.get(count);
+				break;
+			case"Republican":
+				presList=dao.getPresidentsByParty(searchBar);
+				count = 0; 
+				pres = presList.get(count);
+				break;
+			case"Democratic-Republican":
+				presList=dao.getPresidentsByParty(searchBar);
+				count = 0;
+				pres = presList.get(count);
+				break;
+			case"Federalist":
+				presList=dao.getPresidentsByParty(searchBar);
+				count = 0; 
+				pres = presList.get(count);
+				break;
+			case"Independent":
+				presList=dao.getPresidentsByParty(searchBar);
+				count =0; 
+				pres = presList.get(count);
+				break;
+			case "Whig":
+				presList=dao.getPresidentsByParty(searchBar);
+				count =0; 
+				pres = presList.get(count);
+				break;	
+			 default:
+				 presList= dao.getListPresidents();
+				 count = 0; 
+				 pres = presList.get(count);	
+			}	
+		}	
 	}
 }
