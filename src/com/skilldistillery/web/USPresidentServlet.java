@@ -137,8 +137,10 @@ public class USPresidentServlet extends HttpServlet {
 					pres = presList.get(count);
 					session.setAttribute("pres", pres);
 				    session.setAttribute("count", count);
+				    session.setAttribute("presList", presList);
 				 }
 				 else {
+					 session.setAttribute("presList", presList);
 					 return; 
 				 }
 			 }
