@@ -62,6 +62,7 @@ public class USPresidentServlet extends HttpServlet {
 				pres = presList.get(count);
 				session.setAttribute("pres", pres);
 			} else {
+				count = (int)session.getAttribute("count");
 				count++;
 				session.setAttribute("count", count);
 				pres = presList.get(count);
@@ -74,13 +75,13 @@ public class USPresidentServlet extends HttpServlet {
 				pres = presList.get(count);
 				session.setAttribute("pres", pres);
 			} else {
+				count = (int) session.getAttribute("count");
 				count--;
 				session.setAttribute("count", count);
 				pres = presList.get(count);
 				session.setAttribute("pres", pres);
 			}
 		}
-		//
 		// //Button functionality for retrieving party lists
 		else if (req.getParameter("Democrat") != null) {
 			presList = dao.getPresidentsByParty("Democrat");
@@ -140,7 +141,6 @@ public class USPresidentServlet extends HttpServlet {
 				    session.setAttribute("presList", presList);
 				 }
 				 else {
-					 session.setAttribute("presList", presList);
 					 return; 
 				 }
 			 }
@@ -222,6 +222,7 @@ public class USPresidentServlet extends HttpServlet {
 				}
 			}
 		}
+		session.setAttribute("count", count);
 		req.getRequestDispatcher("/index.jsp").forward(req, res);
 	}
 
