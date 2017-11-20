@@ -2,7 +2,7 @@
 ## Team Members: Aaron Ipp, Airik Leon, David Stumpe, David Chirdon
 ## Nov 2017
 ### Skill Distillery Week 6 Project
-![alt text](/WebContent/PresidentAppOverview.png)
+![alt text](https://i.imgur.com/uNUINiU.png)
 
 Collaboration project to develop a working web application.
 
